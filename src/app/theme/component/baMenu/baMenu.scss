@@ -1,0 +1,70 @@
+@import '../../scss/conf/conf';
+
+.al-silder-logo{
+  padding: 30px 20px 20px;
+  border-bottom: 3px solid #101920;
+  transition: all 0.3s ease;
+
+  span{
+     display: block;
+     width: 60px;
+     height: 60px;
+     margin-bottom: 15px;
+
+     & > img{
+       width: 100%;
+       border-radius: 50%;
+     }
+  }
+
+  i{
+    font-weight: bold;
+    display: block;
+    font-style: normal;
+    color: #fff;
+  }
+  .dropdown{
+    position: relative;
+
+    .admin-dropdwon{
+      left: -8px;
+    }
+    & > a{
+      text-decoration: none;
+      color: #bdc5cc;
+      font-size: 13px;
+      &:hover{
+        color: $primary;
+      }
+    }
+    ul {
+      padding: 8px 0;
+
+      li{
+        padding: 8px 15px;
+
+        &.divider{
+          height: 1px;
+          padding: 0;
+          overflow: hidden;
+          background-color: #e5e5e5;
+        }
+        a {
+          text-decoration: none;
+          color: inherit;
+        }
+      }
+
+    }
+  }
+}
+.al-mini-logo{
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  display: none;
+  padding: 18px 0;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}

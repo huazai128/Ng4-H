@@ -1,0 +1,12 @@
+<div baCardBlur class="animated fadeIn card {{cardType}} {{baCardClass || ''}}" zoom-in>
+  <div *ngIf="cardTitle" class="card-header clearfix">
+    <h3 class="card-title" translate>{{cardTitle}}</h3>
+    <div *ngIf="selectType === 'ba-card-config'">
+      <ng-content select="ba-card-config"></ng-content>
+    </div>
+
+  </div>
+  <div class="card-body">
+    <ng-content></ng-content>
+  </div>
+</div>

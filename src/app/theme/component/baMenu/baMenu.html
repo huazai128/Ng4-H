@@ -1,0 +1,30 @@
+<div class="al-silder-logo">
+  <span><img src="{{_app._state.adminInfo.gravatar}}"></span>
+  <i>华仔</i>
+  <div class="dropdown">
+    <a href class="dropdown-toggle" data-toggle="dropdown" id="admin" aria-expanded="false">
+      {{_app._state.adminInfo.slogan}}
+    </a>
+    <ul class="admin-dropdwon dropdown-menu" aria-labelledby="admin">
+      <li><a href>修改头像</a></li>
+      <li><a href>个人资料</a></li>
+      <li><a href>联系我们</a></li>
+      <li><a href>信箱</a></li>
+      <li role="separator" class="divider"></li>
+      <li><a href="#">退出</a></li>
+    </ul>
+  </div>
+</div>
+<div class="al-mini-logo" (click)="toggleMenu()">H+</div>
+
+<ul id="al-sidebar-list" class="al-sidebar-list" baSlimScroll [baSlimScrollOptions]="{height: menuHeight}"
+    (mouseleave)="hoverElemTop=outOfArea">
+  <ba-menu-item
+    [menuItem]="item"
+    (itemHover)="hoverItem($event)"
+    (toggleSubMenu)="toggleSubMenu($event)"
+    *ngFor="let item of menuItems"></ba-menu-item>
+</ul>
+<div class="sidebar-hover-elem" [ngStyle]="{top: hoverElemTop + 'px', height: hoverElemHeight + 'px'}"
+     [ngClass]="{'show-hover-elem': showHoverElem }">
+</div>

@@ -1,0 +1,46 @@
+@import "../../scss/conf/conf";
+
+.dropdown-toggle::after{
+  display: none;
+}
+.card-title{
+  float: left;
+}
+.ibox-tools {
+  display: inline-block;
+  float: right;
+  margin-top: 0;
+  position: relative;
+  padding: 0;
+
+  .dropdown-user{
+    right: 0px;
+    left:auto;
+
+    a {
+      display: block;
+      color: #c4c4c4;
+      &:hover{
+        color: inherit;
+      }
+    }
+  }
+}
+.ibox-tools a {
+  cursor: pointer;
+  margin-left: 5px;
+  color: #c4c4c4;
+  text-decoration: none;
+  padding: 6px 0;
+}
+.ibox-tools a.btn-primary {
+  color: #fff;
+}
+.ibox-tools .dropdown-menu > li > a {
+  padding: 4px 10px;
+  font-size: 12px;
+}
+.ibox .open > .dropdown-menu {
+  left: auto;
+  right: 0;
+}

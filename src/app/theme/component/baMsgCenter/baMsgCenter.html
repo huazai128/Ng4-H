@@ -1,0 +1,84 @@
+<ul class="al-msg-center clearfix">
+  <li class="dropdown">
+    <a href class="dropdown-toggle" id="msg-md1" data-toggle="dropdown" aria-expanded="false">
+      <i class="fa fa-bell"></i><span>10</span>
+      <div class="notification-ring"></div>
+    </a>
+    <div class="top-dropdown-menu dropdown-menu" aria-labelledby="msg-md1">
+      <i class="dropdown-arr"></i>
+      <div class="header clearfix">
+        <strong>通知</strong>
+        <a href>全部标记为已读</a>
+        <a href>设置</a>
+      </div>
+
+      <div class="msg-list">
+        <a href class="clearfix" *ngFor="let msg of messages">
+          <div class="img-area">
+            <img [ngClass]="{'photo-msg-item': !msg?.image}" src="{{(msg?.image || (msg.name | baProfilePicture:'jpg' ))}}">
+          </div>
+          <div class="msg-area">
+            <div [innerHTML]="msg.text"></div>
+            <span>{{msg.time}}</span>
+          </div>
+        </a>
+      </div>
+      <a href>查看所有通知</a>
+    </div>
+  </li>
+
+  <li class="dropdown">
+    <a href class="msg dropdown-toggle" id="msg-id2" data-toggle="dropdown" aria-expanded="false">
+      <i class="fa fa-envelope"></i><span>5</span>
+      <div class="notification-ring"></div>
+    </a>
+    <div class="top-dropdown-menu dropdown-menu" aria-labelledby="msg-id2">
+      <i class="dropdown-arr"></i>
+      <div class="header clearfix">
+        <strong>消息</strong>
+        <a href>全部标记为已读</a>
+        <a href>设置</a>
+      </div>
+
+      <div class="msg-list">
+        <a href class="clearfix" *ngFor="let not of notifications">
+          <div class="img-area">
+            <img [ngClass]="{'photo-msg-item': !not?.image}" src="{{(not?.image || (not.name | baProfilePicture:'jpg' ))}}">
+          </div>
+          <div class="msg-area">
+            <div>{{not.text}}</div>
+            <span>{{not.time}}</span>
+          </div>
+        </a>
+      </div>
+      <a href>查看所有消息</a>
+    </div>
+
+  </li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

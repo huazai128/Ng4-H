@@ -1,0 +1,93 @@
+@import "../../scss/conf/conf";
+
+.page-top {
+  background-color: $sidebar ;
+  position: fixed;
+  top: 0;
+  left: $top-left;
+  right: 0;
+  z-index: 999;
+  min-width: $resMin;
+  height: $top-height;
+  padding: 0 20px 0 20px;
+  transition: left 0.3s ease;
+  will-change: transition;
+  border-bottom: 3px solid $topbar-border;
+
+  .dropdown-toggle::after{
+    display: none;
+  }
+}
+.page-left{
+  left: 200px;
+  transition: left 0.3s ease;
+}
+
+a.collapse-menu-link{
+  font-size: 28px;
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+  line-height: 43px;
+  color: $topbar-text;
+  padding: 0;
+  float: left;
+  width: 40px;
+  height: 43px;
+  text-align: center;
+  &:hover{
+    text-decoration: none;
+    color: $warning;
+  }
+}
+
+.search{
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 25px;
+  transition: all 0.5s ease;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 7px 0 0 30px;
+  float: left;
+  width: $sidebar-width;
+
+  label{
+    cursor: pointer;
+  }
+  i{
+    width: 16px;
+    display: inline-block;
+    cursor: pointer;
+    padding-left: 1px;
+    font-size: 18px;
+    margin-right: 13px;
+    vertical-align: middle;
+  }
+  input{
+    border: none;
+    background: none;
+    color: $sidebar-text;
+    outline:none;
+    width: 120px;
+    padding: 0;
+    margin: 0 0 0 -3px;
+    height: 27px;
+  }
+}
+.page-theme{
+  float: right;
+  margin-right: 15px;
+  margin-top: 15px;
+
+  & > a{
+    text-decoration: none;
+    color: $sidebar-text;
+
+    &:hover{
+      color: $primary;
+    }
+  }
+
+
+}
