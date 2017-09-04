@@ -2,7 +2,6 @@ import { NgModule,ModuleWithProviders,NO_ERRORS_SCHEMA } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { RouterModule } from '@angular/router';
 
-
 import { BaThemeConfigProvider } from "./theme.configProvider";
 
 // 组件
@@ -14,7 +13,11 @@ import {
   BaMenuItem,
   BaConfigComponent,
   BaCardComponent,
-  BaCardConfig
+  BaCardConfig,
+  BaPieChart,
+  BaPeityComponent,
+  BaFlotChartComponent,
+  BaEcharts,
 } from "./component";
 const NGA_COMPONENT = [
   BaNavbarTopComponent,
@@ -24,13 +27,21 @@ const NGA_COMPONENT = [
   BaMenuItem,
   BaConfigComponent,
   BaCardComponent,
-  BaCardConfig
+  BaCardConfig,
+  BaPieChart,
+  BaPeityComponent,
+  BaFlotChartComponent,
+  BaEcharts
 ]
 
 // 管道
-import { BaProfileImgPipe } from "./pipes";
+import {
+  BaProfileImgPipe,
+  BaFormatNumber
+} from "./pipes";
 const NGA_PIPES = [
-  BaProfileImgPipe
+  BaProfileImgPipe,
+  BaFormatNumber
 ]
 // 服务
 import { BaMenuService } from "./service";

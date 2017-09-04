@@ -16,4 +16,18 @@ export class BaCardComponent{
   @Input() cardType:string;
 
   @Input() selectType:string;
+
+  @Input() baBodyClass:string;
+
+  @Input() colorStr:string;
+
+  @Input() title:string;
+  constructor(){
+
+  }
+
+  ngOnInit(){
+    // console.log(this.selectType)
+  }
 }
+

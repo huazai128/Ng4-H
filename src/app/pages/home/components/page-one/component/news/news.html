@@ -1,0 +1,19 @@
+<div class="ibox-content">
+  <div>
+    <div class="feed-activity-list">
+      <div class="feed-element clearfix" *ngFor="let new of news">
+        <a href class="pull-left">
+          <img alt="image" class="img-circle" [src]="new.name | baProfilePicture:'jpg'">
+        </a>
+        <div class="media-body">
+          <small class="pull-right">{{new.time}}</small>
+          <strong>{{new.user}}</strong> {{new.text}}
+          <br>
+          <small class="text-muted">{{new.date}}</small>
+        </div>
+      </div>
+
+    </div>
+    <button class="btn btn-primary btn-block"><i class="fa fa-arrow-down"></i> 加载更多</button>
+  </div>
+</div>

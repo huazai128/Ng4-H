@@ -7,7 +7,15 @@ import { FlotModule } from "ng2modules-flot";
 import { HomeComponent } from "./home.component";
 import { routing } from "./home.routing";
 
-import { PageOneComponent } from "./components";
+import {
+  PageOneComponent,
+  NewsComponent,
+  ProjectComponent,
+  PageTwoComponent,
+  SiteDataComponent,
+  FlotDataComponent,
+  VectorMap
+} from "./components";
 
 
 @NgModule({
@@ -19,7 +27,13 @@ import { PageOneComponent } from "./components";
   ],
   declarations:[
     HomeComponent,
-    PageOneComponent
+    PageOneComponent,
+    NewsComponent,
+    ProjectComponent,
+    PageTwoComponent,
+    SiteDataComponent,
+    FlotDataComponent,
+    VectorMap
   ],
   providers:[
 

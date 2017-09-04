@@ -1,0 +1,13 @@
+<div class="row site-boxs">
+  <div *ngFor="let item of datas" class="col-xlg-3 col-lg-3 col-md-6 col-sm-12 col-xs-12 clearfix">
+    <ba-card [cardTitle]="item.title" selectType="ibox-tools" [colorStr]="item.background" [title]="item.name">
+      <div class="ibox-content">
+        <h1 class="no-margins">{{item.numb}}</h1>
+        <div class="font-bold" [style.color]="item.background">{{item.percen}} <i class="fa {{item.icon}}"></i>
+        </div>
+        <small>{{item.total}}</small>
+      </div>
+    </ba-card>
+  </div>
+
+</div>

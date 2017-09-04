@@ -21,6 +21,12 @@ html,body{
   -moz-osx-font-smoothing: grayscale!important;
 }
 
+ul {
+  list-style: none;
+  li{
+    list-style: none;
+  }
+}
 
 *,
 *:focus,
@@ -53,6 +59,7 @@ main{
 a{
   transition: color 0.5s ease;
   outline: 0 !important;
+  text-decoration: none;
 }
 
 .body-bg{

@@ -3,7 +3,7 @@ export const PAGES_MENU = [
     path: 'pages',
     children: [
       {
-        path: '',
+        path: 'home',
         data: {
           menu: {
             title: '首页',
@@ -15,26 +15,18 @@ export const PAGES_MENU = [
         },
         children: [
           {
-            path: 'page-one',
+            path: 'one',
             data: {
               menu: {
-                title: '首页1',
+                title: '页面1',
               }
             }
           },
           {
-            path: 'page-two',
+            path: 'two',
             data: {
               menu: {
-                title: '首页2',
-              }
-            }
-          },
-          {
-            path: 'page-three',
-            data: {
-              menu: {
-                title: '首页3',
+                title: '页面2',
               }
             }
           }
@@ -61,10 +53,10 @@ export const PAGES_MENU = [
             }
           },
           {
-            path: 'flat',
+            path: 'flot',
             data: {
               menu: {
-                title: 'Flat',
+                title: 'Flot',
               }
             }
           },

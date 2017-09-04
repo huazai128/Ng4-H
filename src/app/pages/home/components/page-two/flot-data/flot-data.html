@@ -1,0 +1,11 @@
+<ul class="stat-list">
+  <li *ngFor="let flot of flotData">
+    <h2 class="no-margins">{{flot.numb | baFormatNumber}}</h2>
+    <small>{{flot.name}}</small>
+    <div class="stat-percent pull-right">{{flot.width}} <i class="fa {{ flot.icon}} text-navy"></i>
+    </div>
+    <div class="progress progress-mini">
+      <div [style.width]="flot.width" class="progress-bar"></div>
+    </div>
+  </li>
+</ul>

@@ -1,0 +1,21 @@
+{
+  "name": "ng4-h",
+  "description": "",
+  "main": "",
+  "authors": [
+    "huazai128 <941154174@qq.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/huazai128/Ng4-H",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "flot-spline": "^0.8.2",
+    "flot.tooltip": "^0.9.0"
+  }
+}

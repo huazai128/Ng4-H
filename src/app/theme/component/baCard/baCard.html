@@ -1,12 +1,20 @@
-<div baCardBlur class="animated fadeIn card {{cardType}} {{baCardClass || ''}}" zoom-in>
+<div baCardBlur class="animated fadeIn card {{cardType}} {{baCardClass || ''}}">
   <div *ngIf="cardTitle" class="card-header clearfix">
     <h3 class="card-title" translate>{{cardTitle}}</h3>
     <div *ngIf="selectType === 'ba-card-config'">
       <ng-content select="ba-card-config"></ng-content>
     </div>
+    <div  *ngIf="selectType === 'ibox-tools'">
+      <div class="ibox-tools">
+        <span class="label label-warning-light" [style.background-color]="colorStr">{{ title }}</span>
+      </div>
+    </div>
+    <div *ngIf="selectType === 'ibox-data'">
+      <ng-content select=".ibox-data"></ng-content>
+    </div>
 
   </div>
-  <div class="card-body">
+  <div class="card-body {{baBodyClass || ''}}">
     <ng-content></ng-content>
   </div>
 </div>

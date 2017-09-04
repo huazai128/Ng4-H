@@ -25,6 +25,14 @@
       }
     }
   }
+  .label-warning-light{
+    border-radius: 3px;
+    font-size: 12px;
+    color: #fff;
+    padding: 1px 5px;
+  }
+
+
 }
 .ibox-tools a {
   cursor: pointer;
@@ -43,4 +51,14 @@
 .ibox .open > .dropdown-menu {
   left: auto;
   right: 0;
+}
+
+
+.card-body{
+  &.no-padding{
+    padding: 0;
+  }
+  &.padding-size{
+    padding: 0 20px 20px 20px;
+  }
 }

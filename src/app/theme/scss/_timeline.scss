@@ -1,0 +1,29 @@
+@import "conf/conf";
+
+.timeline-item .date i {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px;
+  width: 30px;
+  text-align: center;
+  border-top: 1px solid #27343a;
+  border-bottom: 1px solid #27343a;
+  border-left: 1px solid #27343a;
+  background: #27343a;
+}
+.timeline-item .date {
+  text-align: right;
+  width: 110px;
+  position: relative;
+  padding-top: 30px;
+}
+.timeline-item .content {
+  border-left: 1px solid #27343a;
+  border-top: 1px solid #27343a;
+  padding-top: 10px;
+  min-height: 100px;
+}
+.timeline-item .content:hover {
+  background: #27343a;
+}

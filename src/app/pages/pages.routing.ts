@@ -7,7 +7,8 @@ const routes:Routes = [
     component:PagesComponent,
     children:[
       { path:"",redirectTo:"home",pathMatch:"full"},
-      { path:"home",loadChildren:"app/pages/home/home.module#HomeModule" }
+      { path:"home",loadChildren:"app/pages/home/home.module#HomeModule" },
+      { path:"charts",loadChildren:"app/pages/charts/charts.module#ChartsModule" }
     ]
   }
 ]

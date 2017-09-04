@@ -1,6 +1,6 @@
 import { Routes,RouterModule } from "@angular/router";
 import { HomeComponent } from "./home.component";
-import { PageOneComponent } from "./components";
+import { PageOneComponent,PageTwoComponent } from "./components";
 
 const routes:Routes = [
   { path:"",
@@ -8,6 +8,7 @@ const routes:Routes = [
     children:[
       {path:"" ,redirectTo:"one",pathMatch:"full"},
       {path:'one',component:PageOneComponent},
+      {path:'two',component:PageTwoComponent},
     ]
   }
 ]

@@ -5,3 +5,7 @@ export * from "./baMenu";
 export * from "./baMenu/components/baMenuItem";
 export * from "./baConfig";
 export * from "./baCard";
+export * from "./baPieChart";
+export * from "./baPeity";
+export * from "./baFlotChart";
+export * from "./baEcharts";

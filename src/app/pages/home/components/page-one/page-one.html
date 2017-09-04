@@ -31,7 +31,7 @@
         </div>
         <div class="col-sm-6">
           <div class="flot-chart dashboard-chart">
-            <flot [options]="options" [dataset]="dataset" width="100%"></flot>
+            <ba-flot [options]="options" [dataset]="dataset"></ba-flot>
           </div>
           <div class="row text-left">
             <div class="col-sm-4">
@@ -55,15 +55,9 @@
             <h4>项目的进度</h4>
             <p>您还有两项未完成的任务</p>
             <div class="row text-center">
-              <div class="col-lg-6 ui-sortable">
-                <div class="chart easypiechart inline" data-percent="73"><span class="easypie-text">61%</span>
-                  <canvas height="160" width="160" style="height: 80px; width: 80px;"></canvas></div>
-                <h5>OA测</h5>
-              </div>
-              <div class="col-lg-6 ui-sortable">
-                <div class="chart2 easypiechart inline" data-percent="33"><span class="easypie-text">31%</span>
-                  <canvas height="160" width="160" style="height: 80px; width: 80px;"></canvas></div>
-                <h5>CRM</h5>
+              <div class="col-lg-6" *ngFor="let chart of charts">
+                <ba-pie-chart [color]="chart.color" [percent]="chart.percent"></ba-pie-chart>
+                <h5>{{chart.name}}</h5>
               </div>
             </div>
             <div class="m-t">
@@ -72,6 +66,68 @@
           </div>
         </div>
       </div>
+    </ba-card>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-4 ui-sortable">
+
+    <ba-card [cardTitle]="title1" [selectType]="select">
+      <ba-card-config></ba-card-config>
+      <div class="ibox-content">
+        <div>
+          <div class="pull-right text-right">
+            <ba-peity [stylePeity]="pieStyles.bar" [options]="configObj.barConfig">5,3,9,6,5,9,7,3,5,2,4,7,3,2,7,9,6,4,5,7,3,2,1,0,9,5,6,8,3,2,1</ba-peity>
+            <br/>
+            <small class="font-bold">&yen; 20 054.43</small>
+          </div>
+          <h4>广东省销售数据
+            <br/>
+            <small class="m-r"><a>查看所有数据</a></small>
+          </h4>
+        </div>
+      </div>
+    </ba-card>
+
+    <ba-card cardTitle="最新动态" [selectType]="select" baBodyClass="no-padding">
+      <ba-card-config></ba-card-config>
+      <div class="ibox-content">
+        <ul class="list-group">
+          <li class="list-group-item">
+            <p><a class="text-info" href>#感谢有你#</a> 感谢你们一路的相伴，未来也请让我为你们撑腰，我们会更好</p>
+            <small class="block text-muted"><i class="fa fa-clock-o"></i> 1分钟前</small>
+          </li>
+          <li class="list-group-item">
+            <p><a class="text-info" href>@颜文字君</a> 女生身高×1.09后，就是最适合你的男生身高；相反，男生是÷1.09就可以了..小伙伴们可以试着算下..【图是我的..(*/ω＼*)</p>
+            <div class="text-center m">
+            </div>
+            <small class="block text-muted"><i class="fa fa-clock-o"></i> 2小时前</small>
+          </li>
+
+          <li class="list-group-item">
+            <p><a class="text-info" href>#发型师#</a> 刚才剪发，顾客在看这个视频，妈蛋，这舞姿太销魂了，笑得手颤抖。。。</p>
+            <small class="block text-muted"><i class="fa fa-clock-o"></i> 1分钟前</small>
+          </li>
+          <li class="list-group-item">
+            <p><a class="text-info" href>#一年级#</a> ——#陈氏父子# cut：“他是我的陈爸爸”[心]“我叫陈思成，陈老师的陈” [心]“不再见就是，你也好，爸爸也好，妈妈也好，都永远不要说再见</p>
+            <small class="block text-muted"><i class="fa fa-clock-o"></i> 2分钟前</small>
+          </li>
+        </ul>
+      </div>
+    </ba-card>
+  </div>
+
+  <div class="col-lg-4 ui-sortable">
+    <ba-card cardTitle="最新消息" selectType="ibox-tools" baBodyClass="padding-size" title="10条消息">
+      <page-news></page-news>
+    </ba-card>
+  </div>
+
+  <div class="col-lg-4 ui-sortable">
+    <ba-card cardTitle="项目进度" selectType="ba-card-config" baBodyClass="no-padding">
+      <ba-card-config></ba-card-config>
+      <page-project></page-project>
     </ba-card>
   </div>
 </div>

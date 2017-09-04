@@ -1,0 +1,76 @@
+<div class="row">
+  <div class="col-lg-6">
+    <ba-card cardTitle="折线图" selectType="ba-card-config">
+      <ba-card-config></ba-card-config>
+      <ba-echarts [options]="lineoption"></ba-echarts>
+    </ba-card>
+
+  </div>
+
+  <div class="col-lg-6">
+    <ba-card cardTitle="柱形图" selectType="ba-card-config" >
+      <ba-card-config></ba-card-config>
+      <ba-echarts [options]="baroption"></ba-echarts>
+    </ba-card>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-6">
+    <ba-card cardTitle="散点图" selectType="ba-card-config">
+      <ba-card-config></ba-card-config>
+      <ba-echarts [options]="scatteroption"></ba-echarts>
+    </ba-card>
+
+  </div>
+
+  <div class="col-lg-6">
+    <ba-card cardTitle="K线图" selectType="ba-card-config" >
+      <ba-card-config></ba-card-config>
+      <ba-echarts [options]="koption"></ba-echarts>
+    </ba-card>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-6">
+    <ba-card cardTitle="饼状图" selectType="ba-card-config">
+      <ba-card-config></ba-card-config>
+      <ba-echarts [options]="pieoption"></ba-echarts>
+    </ba-card>
+
+  </div>
+
+  <div class="col-lg-6">
+    <ba-card cardTitle="雷达图" selectType="ba-card-config" >
+      <ba-card-config></ba-card-config>
+      <ba-echarts [options]="radaroption"></ba-echarts>
+    </ba-card>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-6">
+    <ba-card cardTitle="漏斗图" selectType="ba-card-config">
+      <ba-card-config></ba-card-config>
+      <ba-echarts [options]="funneloption"></ba-echarts>
+    </ba-card>
+
+  </div>
+
+  <div class="col-lg-6">
+    <ba-card cardTitle="力导向布局图" selectType="ba-card-config" >
+      <ba-card-config></ba-card-config>
+      <ba-echarts [options]="gaugeoption"></ba-echarts>
+    </ba-card>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-12">
+    <ba-card cardTitle="中国地图" selectType="ba-card-config" >
+      <ba-card-config></ba-card-config>
+      <ba-echarts [options]="mapoption" height="600px" baChartsClass="ba-charts"></ba-echarts>
+    </ba-card>
+  </div>
+</div>

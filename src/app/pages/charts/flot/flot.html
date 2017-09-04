@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="col-lg-6">
+    <ba-card cardTitle="柱状图" selectType="ba-card-config">
+      <ba-card-config></ba-card-config>
+      <ba-flot [options]="barOptions" [dataset]="barData" ></ba-flot>
+    </ba-card>
+  </div>
+  <div class="col-lg-6">
+    <ba-card cardTitle="折线图" selectType="ba-card-config">
+      <ba-card-config></ba-card-config>
+      <ba-flot [options]="zheOptions" [dataset]="zheData"></ba-flot>
+    </ba-card>
+  </div>
+</div>
+

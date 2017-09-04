@@ -1,0 +1,127 @@
+@import "../../../../theme/scss/conf/conf";
+
+.ibox-heading {
+  padding: 20px;
+  background-color: #f3f6fb;
+  border-bottom: none;
+  color: inherit;
+}
+.ibox-heading  {
+  h3{
+    font-weight: 200;
+    font-size: 24px;
+    color: #000;
+  }
+
+  small{
+    color: #000;
+  }
+}
+.feed-activity-list{
+  padding: 0 20px;
+
+  .feed-element{
+
+    padding: 15px 0;
+    border-bottom: 1px solid  #f3f3f4;
+
+    &:last-child{
+      border-bottom: 0;
+    }
+
+    strong{
+      display: block;
+      padding-bottom: 3px;
+    }
+
+    small.pull-right{
+      color: $primary;
+    }
+
+    & > div {
+      & > div{
+        font-size: 80%;
+      }
+    }
+  }
+}
+
+.ibox-table{
+
+  table{
+    margin-bottom: 0;
+    th{
+      border: 0;
+    }
+  }
+  table th, table td {
+    padding: 0.75rem 0;
+  }
+}
+
+
+td {
+  span.label{
+    border-radius: 4px;
+    font-size: 90%;
+    padding: 0 3px;
+  }
+  &.text-navy{
+    color: #1ab394;
+  }
+}
+
+.todo-list {
+  list-style: none outside none;
+  margin: 0;
+  padding: 15px;
+  font-size: 14px;
+}
+.todo-list.small-list {
+  font-size: 12px;
+}
+.todo-list.small-list > li {
+  background: #f3f3f4;
+  border-left: none;
+  border-right: none;
+  border-radius: 4px;
+  color: inherit;
+  margin-bottom: 2px;
+  padding: 6px 6px 6px 12px;
+}
+.todo-list.small-list .btn-xs,
+.todo-list.small-list .btn-group-xs > .btn {
+  border-radius: 5px;
+  font-size: 10px;
+  line-height: 1.5;
+  padding: 1px 2px 1px 5px;
+}
+.todo-list > li {
+  border-radius: 4px;
+  color: inherit;
+  margin-bottom: 2px;
+  padding: 10px;
+}
+.todo-list .handle {
+  cursor: move;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0 5px;
+}
+.todo-list > li .label {
+  font-size: 9px;
+  margin-left: 10px;
+}
+.check-link {
+  font-size: 16px;
+}
+.todo-completed {
+  text-decoration: line-through;
+}
+.geo-statistic h1 {
+  font-size: 36px;
+  margin-bottom: 0;
+}
+.glyphicon.fa {
+  font-family: "FontAwesome";
+}

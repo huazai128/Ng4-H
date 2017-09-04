@@ -1,0 +1,17 @@
+@import "../../../../../theme/scss/conf/conf";
+
+.site-boxs{
+  h1{
+    font-weight: 100;
+    font-size: 30px;
+    margin: 0;
+  }
+  small{
+    font-size: 90%;
+  }
+  div.font-bold{
+    float: right;
+    font-weight: 600;
+    font-size: inherit;
+  }
+}

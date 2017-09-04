@@ -2,10 +2,11 @@
 @import "../../scss/switch";
 
 .theme-config {
-  position: absolute;
+  position: fixed;
   top: 60px;
   right: 0;
   overflow: hidden;
+  z-index: 500;
 
   @include on-of-switch();
 
