@@ -1,0 +1,86 @@
+@import "../../../theme/scss/conf/conf";
+
+.float-e-margins{
+  border-radius: 5px;
+  .ibox-content{
+    .file-manager{
+
+      & > a{
+        background-color: $green;
+        border-color: $green;
+        margin-bottom: 15px;
+      }
+
+      & > h5 {
+        font-size: 12px;
+        margin-bottom: 5px;
+      }
+
+      & > ul{
+        padding-left: 0;
+        margin-left: 0;
+        li{
+
+          border-bottom: 1px solid $border-gray;
+          a{
+            padding: 8px 0;
+            display: block;
+            text-decoration: none;
+            font-size: 12px;
+            color: $default;
+            &:hover{
+              color: $primary
+            }
+            .label{
+              display: inline-block;
+              padding: 1px 9px;
+              border-radius: 3px;
+            }
+
+            i{
+              padding-right: 10px;
+            }
+          }
+        }
+
+
+        &.table-list{
+          li{
+            border-bottom: 0 !important;
+
+            a{
+              padding: 6px 0;
+            }
+          }
+        }
+
+        &.tag-box{
+          li{
+            border: none;
+            float: left;
+            padding:0;
+
+            a{
+              font-size: 10px;
+              background-color: $green;
+              padding: 5px 12px;
+              color: inherit;
+              border-radius: 2px;
+              border: 1px solid $green;
+              margin-right: 5px;
+              margin-top: 5px;
+              display: block;
+              i{
+                padding-right: 2px;
+              }
+              &:hover{
+                background-color: $primary;
+              }
+            }
+          }
+        }
+      }
+
+    }
+  }
+}

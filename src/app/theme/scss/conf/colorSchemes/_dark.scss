@@ -11,6 +11,8 @@ $topbar: #23282d;
 $topbar-text: #ffffff;
 $topbar-border: $sidebar-border;
 
+$border-gray: #545454;
+
 $default-text: $default; // default text color layout (usually is the same as $default)
 $content-text: $default-text; // content text color on card, panels, form, etc
 $help-text: rgba($default-text, 0.5); // additional text color for hits
@@ -41,6 +43,7 @@ $bootstrap-panel-shadow: 1px 1px 4px rgba(0, 0, 0, 0.15);
 // color scheme
 // $primary: #209e91 !default;
 $primary: #017170 !default;
+$green:#1ab394 !default;
 $info: #3498db !default;
 $success: #287562 !default;
 $warning: #f39c12 !default;
