@@ -1,0 +1,10 @@
+<div class="{{baCheckboxClass}}">
+  <label class="check-link custom-checkbox nowrap">
+    <input type="checkbox"
+           [checked]=state
+           (change)="onChange($event.target.checked)"
+           [disabled]="disabled"
+           [value]="value">
+    <ng-content select="[ba-checkbox-label]"></ng-content>
+  </label>
+</div>

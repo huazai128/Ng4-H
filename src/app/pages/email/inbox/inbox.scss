@@ -1,0 +1,54 @@
+@import "../../../theme/scss/conf/conf";
+
+.ibox-bg{
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+}
+
+.mail-box-header{
+  padding: 30px 20px;
+  .mail-head{
+    h2{
+      font-weight: 100;
+      font-size: 24px;
+    }
+    .input-group{
+      border: 1px solid $green;
+      border-radius: 6px;
+      width: 300px;
+      height: 34px;
+      margin-bottom: 0;
+
+      button.btn-primary{
+        background-color: $green !important;
+        border: 1px solid $green;
+        color: $default !important;
+        padding: 0.25rem 1rem;
+      }
+    }
+  }
+
+  .mail-tools{
+    margin-top: 15px;
+  }
+}
+
+.mail-box-list{
+  padding-bottom: 20px;
+  thead th{
+    border-bottom: 0;
+  }
+  thead th,tbody td{
+    border-color: #545454;
+  }
+  tbody td {
+    a{
+      text-decoration: none;
+      color: inherit;
+    }
+    span.label{
+      padding: 2px 8px;
+      border-radius: 4px;
+    }
+  }
+}

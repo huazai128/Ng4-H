@@ -91,7 +91,7 @@ export const PAGES_MENU = [
             }
           },
           {
-            path: 'mail',
+            path: 'detail',
             data: {
               menu: {
                 title: '查看邮件',

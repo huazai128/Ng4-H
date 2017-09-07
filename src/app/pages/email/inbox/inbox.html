@@ -1,1 +1,100 @@
-<div class=""></div>
+<div class="ibox-content ibox-bg animated ">
+  <div class="mail-box-header">
+    <div class="clearfix mail-head">
+      <h2 class="pull-left ">
+        收件箱(<span>16</span>)
+      </h2>
+      <form class="form-horizontal pull-right " [formGroup]="searchForm"
+            (ngSubmit)="searchEmail()">
+        <div class="input-group">
+          <input type="text"
+                 class="form-control with-danger-addon"
+                 placeholder="搜索邮件标题、正文等"
+                 [formControl]="keywords">
+          <span class="input-group-btn">
+            <button type="submit"
+                    class="btn btn-primary" [disabled]="!searchForm.valid">搜索</button>
+          </span>
+        </div>
+      </form>
+    </div>
+    <div class="mail-tools">
+      <button class="btn btn-white btn-sm" data-toggle="tooltip" data-placement="left" title="" data-original-title="刷新邮件列表"><i class="fa fa-refresh"></i> 刷新</button>
+      <button class="btn btn-white btn-sm" data-toggle="tooltip" data-placement="top" title="" data-original-title="标为已读"><i class="fa fa-eye"></i>
+      </button>
+      <button class="btn btn-white btn-sm" data-toggle="tooltip" data-placement="top" title="" data-original-title="标为重要"><i class="fa fa-exclamation"></i>
+      </button>
+      <button class="btn btn-white btn-sm" data-toggle="tooltip" data-placement="top" title="标为垃圾邮件"><i class="fa fa-trash-o"></i>
+      </button>
+    </div>
+  </div>
+
+  <div class="mail-box-list">
+    <table class="table table-hover table-mail">
+      <thead>
+      <tr style="border-bottom: 0 !important;">
+        <th class="check-mail">
+          <ba-checkbox [(ngModel)]="isRemember"
+                       (ngModelChange)="changes()"
+                       [ngModelOptions]="{standalone:true}">
+            <span ba-checkbox-label></span>
+          </ba-checkbox>
+        </th>
+        <th class="mail-ontact">信息来源</th>
+        <th class="mail-subject">邮件</th>
+        <th>标注</th>
+        <th class="text-right mail-date">时间</th>
+      </tr>
+      </thead>
+      <tbody>
+
+      <tr *ngIf="!emails || !emails.data.length">
+        <td colspan="7">
+          <p class="text-muted text-center announcement-err-msg"
+             *ngIf="emails && emails.data.length == 0">暂时没有数据</p>
+          <p class="text-muted text-center announcement-err-msg"
+             *ngIf="emails && emails.data.length == undefined">加载中...</p>
+        </td>
+      </tr>
+      <ng-template [ngIf]="emails && emails.data.length">
+        <tr class="unread" *ngFor="let email of emails.data">
+          <td class="check-mail">
+            <ba-checkbox [(ngModel)]="email.selected"
+                         (ngModelChange)="changes()"
+                         [ngModelOptions]="{standalone:true}">
+              <span ba-checkbox-label></span>
+            </ba-checkbox>
+          </td>
+          <td class="mail-ontact">
+            <a href>{{email.name}}</a>
+
+            <span class="label {{ email.num == 1 ? 'label-warning':'label-danger' }} pull-right" *ngIf="email.style">{{email.style}}</span>
+          </td>
+          <td class="mail-subject"><a href>{{email.description}}</a>
+          </td>
+          <td class="">
+            <i class="fa fa-paperclip" *ngIf="email.state"></i>
+          </td>
+          <td class="text-right mail-date">{{email.time}}</td>
+        </tr>
+      </ng-template>
+      </tbody>
+    </table>
+    <br />
+    <!-- http://valor-software.com/ngx-bootstrap/#/pagination  配置详情 -->
+    <pagination class="pagination-xs"
+                firstText="首页"
+                lastText="末页"
+                nextText="下一页"
+                previousText="上一页"
+                pageBtnClass="btn-primary"
+                [totalItems]="emails.pagination.total"
+                [itemsPerPage]="emails.pagination.pre_page"
+                [(ngModel)]="emails.pagination.current_page"
+                [maxSize]="7"
+                [boundaryLinks]="true"
+                [rotate]="false"pageChanged
+                (pageChanged)="($event)">
+    </pagination>
+  </div>
+</div>
