@@ -24,6 +24,7 @@
         "../node_modules/font-awesome/scss/font-awesome.scss",
         "../node_modules/ionicons/dist/scss/ionicons.scss",
         "../node_modules/bootstrap/scss/bootstrap.scss",
+        "../node_modules/summernote/dist/summernote.css",
         "app/theme/theme.scss",
         "styles.scss"
       ],
@@ -38,7 +39,9 @@
         "../bower_components/flot-spline/js/jquery.flot.spline.js",
         "../bower_components/flot.tooltip/js/jquery.flot.tooltip.js",
         "../node_modules/easy-pie-chart/dist/jquery.easypiechart.js",
-        "../node_modules/peity/jquery.peity.js"
+        "../node_modules/peity/jquery.peity.js",
+        "../node_modules/summernote/dist/summernote.js",
+        "../node_modules/summernote/lang/summernote-zh-CN.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {

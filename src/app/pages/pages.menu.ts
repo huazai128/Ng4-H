@@ -99,7 +99,7 @@ export const PAGES_MENU = [
             }
           },
           {
-            path: 'write',
+            path: 'compose',
             data: {
               menu: {
                 title: '写信',

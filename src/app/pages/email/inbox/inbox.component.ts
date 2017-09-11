@@ -1,4 +1,4 @@
-import { Component,ViewEncapsulation } from "@angular/core";
+import { Component,ViewEncapsulation,HostBinding } from "@angular/core";
 import { FormGroup,AbstractControl,FormBuilder,Validators } from "@angular/forms";
 import { InboxService } from "./inbox.service";
 
@@ -6,7 +6,7 @@ import { InboxService } from "./inbox.service";
   selector:"page-inbox",
   templateUrl:"./inbox.html",
   styleUrls:["./inbox.scss"],
-  encapsulation:ViewEncapsulation.None
+  encapsulation:ViewEncapsulation.None,
 })
 
 export class InboxComponent{

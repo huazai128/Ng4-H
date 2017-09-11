@@ -9,6 +9,7 @@ import { NavbarComponent } from "./navbar";
 import { InboxComponent } from "./inbox/inbox.component";
 import { InboxService} from "./inbox/inbox.service";
 import { CheckEmailComponent } from "./checkEmail";
+import { ComposeComponent } from "./compose";
 
 import { routing } from "./email.routing";
 
@@ -25,7 +26,8 @@ import { routing } from "./email.routing";
     EmailComponent,
     NavbarComponent,
     InboxComponent,
-    CheckEmailComponent
+    CheckEmailComponent,
+    ComposeComponent
   ],
   providers:[
     InboxService

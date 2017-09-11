@@ -1,0 +1,107 @@
+@import "../../../theme/scss/conf/conf";
+
+a{
+  text-decoration: none;
+}
+.ibox-bg{
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  .mail-box-header{
+    padding: 30px 20px 20px 20px;
+    border-bottom: 1px solid #545454;
+    h2{
+      font-weight: 100;
+      font-size: 24px;
+    }
+    .tooltip-demo{
+      a{
+        text-decoration: none;
+        color: #fff;
+        background-color: $green;
+      }
+      h3{
+        font-weight: 400;
+        font-size: 16px;
+        span{
+          font-weight: bold;
+        }
+      }
+      h5{
+        font-weight: bold;
+        font-size: 13px;
+        span{
+          font-weight: 400;
+        }
+      }
+    }
+  }
+  .mail-box{
+
+    & > div{
+      border-bottom: 1px solid #545454;
+      padding: 30px 20px 10px 20px;
+    }
+    .mail-body{
+      h4{
+        font-size: 15px;
+      }
+      p{
+        font-size: 14px;
+        color: #e5e5e5;
+      }
+    }
+    .mail-attachment{
+      p{
+        font-size: 12px;
+        a{
+          color: $green;
+        }
+      }
+      .file-box{
+        float: left;
+        width: 200px;
+
+        & > div{
+          border: 1px solid #545454;
+          padding: 0;
+          position: relative;
+          margin-bottom: 20px;
+          margin-right: 20px;
+        }
+        .file > a{
+          color: $green;
+           & > .icon, & > .image{
+             height: 100px;
+             overflow: hidden;
+           }
+          & > .icon{
+            padding: 15px 10px;
+            text-align: center;
+            i {
+              font-size: 70px;
+              color: #dadada;
+            }
+          }
+          & > .image{
+            overflow: hidden;
+            img{
+              width: 100%;
+              height: auto;
+            }
+          }
+          .file-name{
+            text-align: center;
+            padding: 6px 0 8px;
+          }
+        }
+
+      }
+    }
+  }
+  .last-demo{
+    a{
+      background-color: $green;
+      color: #fff;
+    }
+  }
+}

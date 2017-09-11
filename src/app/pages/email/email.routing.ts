@@ -2,6 +2,7 @@ import { Routes,RouterModule } from "@angular/router";
 import { EmailComponent } from "./email.component";
 import { InboxComponent } from "./inbox/inbox.component";
 import { CheckEmailComponent } from "./checkEmail";
+import { ComposeComponent } from "./compose";
 
 const routes:Routes = [
   { path:"",
@@ -9,7 +10,8 @@ const routes:Routes = [
     children:[
       { path:"",redirectTo:"inbox",pathMatch:"full" },
       { path:"inbox",component:InboxComponent },
-      { path:"detail",component:CheckEmailComponent }
+      { path:"detail",component:CheckEmailComponent },
+      { path:"compose",component:ComposeComponent }
     ]
   }
 ]

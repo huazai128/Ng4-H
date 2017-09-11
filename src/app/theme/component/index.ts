@@ -10,3 +10,4 @@ export * from "./baPeity";
 export * from "./baFlotChart";
 export * from "./baEcharts";
 export * from "./baCheckbox";
+export * from "./baSummernote"

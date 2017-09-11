@@ -1,6 +1,5 @@
 import { Component,ViewEncapsulation } from "@angular/core";
 
-
 @Component({
   selector:"page-email",
   template:`
@@ -9,11 +8,11 @@ import { Component,ViewEncapsulation } from "@angular/core";
         <page-navbar></page-navbar>
       </div>
       <div class="col-lg-9 col-md-9">
-        <router-outlet></router-outlet>
+        <router-outlet ></router-outlet>
       </div>
     </div>
   `,
-  encapsulation:ViewEncapsulation.None
+  encapsulation:ViewEncapsulation.None,
 })
 
 export class EmailComponent{

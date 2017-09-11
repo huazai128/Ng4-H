@@ -1,0 +1,42 @@
+<div class="ibox-content ibox-bg animated fadeInRight">
+  <div class="mail-box-header clearfix">
+    <div class="pull-right tooltip-demo">
+      <a href class="btn btn-white btn-sm" data-toggle="tooltip" data-placement="top" title="" data-original-title="存为草稿"><i class="fa fa-pencil"></i> 存为草稿</a>
+      <a href class="btn btn-danger btn-sm" data-toggle="tooltip" data-placement="top" title="放弃"><i class="fa fa-times"></i> 放弃</a>
+    </div>
+    <h2 class="pull-left">写信</h2>
+  </div>
+
+  <div class="mail-box">
+    <div class="mail-body">
+      <form class="form-horizontal" [formGroup]="editForm">
+        <div class="form-group row">
+          <label class="col-md-2 text-right control-label">发送到：</label>
+          <div class="col-md-10">
+            <input type="text" class="form-control" [formControl]="emails" value="i@zi-han.net">
+          </div>
+        </div>
+        <div class="form-group row">
+          <label class="col-md-2 text-right control-label">主题：</label>
+          <div class="col-md-10">
+            <input type="text" class="form-control" [formControl]="title" value="">
+          </div>
+        </div>
+        <div class="form-group row">
+          <div class="col-md-12">
+            <ba-summernote [(ngModel)]="content"
+                           [ngModelOptions]="{standalone: true}"></ba-summernote>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="mail-text h-200">
+
+    </div>
+    <div class="mail-body text-right tooltip-demo">
+      <a href class="btn btn-sm btn-primary" data-toggle="tooltip" data-placement="top" title="Send"><i class="fa fa-reply"></i> 发送</a>
+      <a href class="btn btn-white btn-sm" data-toggle="tooltip" data-placement="top" title="Discard email"><i class="fa fa-times"></i> 放弃</a>
+      <a href class="btn btn-white btn-sm" data-toggle="tooltip" data-placement="top" title="Move to draft folder"><i class="fa fa-pencil"></i> 存为草稿</a>
+    </div>
+  </div>
+</div>

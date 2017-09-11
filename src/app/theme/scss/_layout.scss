@@ -66,7 +66,7 @@ main{
 a{
   transition: color 0.5s ease;
   outline: 0 !important;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .body-bg{
@@ -256,3 +256,7 @@ a{
 .pull-right{
   float:right;
 }
+.note-editable{
+  min-height: 200px !important;
+}
+

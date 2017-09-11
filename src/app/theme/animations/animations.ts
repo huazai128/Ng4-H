@@ -4,14 +4,13 @@ export const animat = [
   trigger('enterLeave', [
 
     // Enter from right
-    state('fromRight', style({opacity: 1, transform: 'translateX(0)'})),
-    transition('* => fromRight', [
-      style({opacity: 0, transform: 'translateX(5%)'}),
-      animate('400ms ease-in-out')
+    state('fromRight', style({opacity: 0, transform: 'translateX(50%)'})),
+    transition('viod => *', [
+      style({opacity: 1, transform: 'translateX(0%)'}),
+      animate('800ms ease-in-out')
     ]),
-    state('fromRightOut', style({opacity: 0, transform: 'translateX(-5%)'})),
-    transition('fromRight => fromRightOut', [
-      style({opacity: 1, transform: 'translateX(0)'}),
+    transition('* => void', [
+      style({opacity: 0, transform: 'translateX(50%)'}),
       animate('300ms ease-in-out')
     ]),
 
@@ -49,6 +48,23 @@ export const animat = [
     transition('rotate => rotateOut', [
       style({opacity: 1, transform: 'rotate(0deg)'}),
       animate('400ms ease-in-out')
+    ]),
+
+    // ins
+    state("ins",style({transform:"translateX(0)"})),
+    transition("void => *",[
+      animate(300,keyframes([
+        style({opacity:0,transform:"translateX(-100%)",offset:0}),
+        style({opacity:1,transform:"translateX(25)",offset:0.3}),
+        style({opacity:1,transform:"translateX(0)",offset:1}),
+      ]))
+    ]),
+    transition("* => void",[
+      animate(300,keyframes([
+        style({opacity: 1,transform:"translateX(0)",offset: 0}),
+        style({opacity: 1,transform:"translateX(-25px)",offset: 0.7}),
+        style({opacity: 1,transform:"translateX(100%)",offset: 1}),
+      ]))
     ])
   ])
 ]

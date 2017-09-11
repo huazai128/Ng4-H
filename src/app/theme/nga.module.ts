@@ -18,7 +18,8 @@ import {
   BaPeityComponent,
   BaFlotChartComponent,
   BaEcharts,
-  BaCheckbox
+  BaCheckbox,
+  BaSummernote
 } from "./component";
 const NGA_COMPONENT = [
   BaNavbarTopComponent,
@@ -33,7 +34,8 @@ const NGA_COMPONENT = [
   BaPeityComponent,
   BaFlotChartComponent,
   BaEcharts,
-  BaCheckbox
+  BaCheckbox,
+  BaSummernote
 ]
 
 // 管道
