@@ -31,4 +31,9 @@ export class ComposeComponent{
   ngOnInit(){
     jQuery('[data-toggle="tooltip"]').tooltip();
   }
+
+
+  public emailForm(value){
+    console.log(value)
+  }
 }

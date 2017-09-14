@@ -109,6 +109,18 @@ export const PAGES_MENU = [
         ]
       },
       {
+        path: 'widgets',
+        data: {
+          menu: {
+            title: '小工具',
+            icon: 'fa fa-flask',
+            selected: false,
+            expanded: false,
+            order: 0
+          }
+        }
+      },
+      {
         path: 'forms',
         data: {
           menu: {

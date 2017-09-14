@@ -9,34 +9,42 @@
 
   <div class="mail-box">
     <div class="mail-body">
-      <form class="form-horizontal" [formGroup]="editForm">
+      <form class="form-horizontal"
+            [formGroup]="editForm"
+            (ngSubmit)="emailForm(editForm.value)">
         <div class="form-group row">
-          <label class="col-md-2 text-right control-label">发送到：</label>
+          <label class="col-md-2 text-right control-label" for="emails">发送到：</label>
           <div class="col-md-10">
-            <input type="text" class="form-control" [formControl]="emails" value="i@zi-han.net">
+            <input type="text" class="form-control" id="emails" [formControl]="emails" value="i@zi-han.net">
           </div>
         </div>
         <div class="form-group row">
-          <label class="col-md-2 text-right control-label">主题：</label>
+          <label class="col-md-2 text-right control-label" for="title">主题：</label>
           <div class="col-md-10">
-            <input type="text" class="form-control" [formControl]="title" value="">
+            <input type="text" class="form-control" id="title" [formControl]="title" value="标题">
           </div>
         </div>
         <div class="form-group row">
           <div class="col-md-12">
-            <ba-summernote [(ngModel)]="content"
-                           [ngModelOptions]="{standalone: true}"></ba-summernote>
+            <ba-summernote class="form-control"
+                           [formControl]="content"></ba-summernote>
+          </div>
+        </div>
+        <br />
+        <div class="form-group row">
+          <div class="col-md-12 text-right email-btns">
+            <button type="submit"
+                    [disabled]="!editForm.valid"
+                    class="btn btn-sm btn-primary"
+                    data-toggle="tooltip"
+                    data-placement="top"
+                    title="Send">
+              <i class="fa fa-reply"></i> 发送</button>
+            <button type="button" class="btn btn-white btn-sm" data-toggle="tooltip" data-placement="top" title="Discard email"><i class="fa fa-times"></i> 放弃</button>
+            <button type="button" class="btn btn-white btn-sm" data-toggle="tooltip" data-placement="top" title="Move to draft folder"><i class="fa fa-pencil"></i> 存为草稿</button>
           </div>
         </div>
       </form>
-    </div>
-    <div class="mail-text h-200">
-
-    </div>
-    <div class="mail-body text-right tooltip-demo">
-      <a href class="btn btn-sm btn-primary" data-toggle="tooltip" data-placement="top" title="Send"><i class="fa fa-reply"></i> 发送</a>
-      <a href class="btn btn-white btn-sm" data-toggle="tooltip" data-placement="top" title="Discard email"><i class="fa fa-times"></i> 放弃</a>
-      <a href class="btn btn-white btn-sm" data-toggle="tooltip" data-placement="top" title="Move to draft folder"><i class="fa fa-pencil"></i> 存为草稿</a>
     </div>
   </div>
 </div>
