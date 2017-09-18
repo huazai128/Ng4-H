@@ -1,4 +1,6 @@
 import { Component } from "@angular/core";
+import { animat } from "../../../theme/animations";
+
 
 import "echarts/map/js/china.js";
 import "echarts/map/js/china-contour.js";
@@ -7,6 +9,7 @@ import "echarts/map/js/china-contour.js";
 @Component({
   selector:"page-echart",
   templateUrl:"./echarts.html",
+  animations:[animat]
 })
 
 export class EchartsComponent{

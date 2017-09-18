@@ -54,9 +54,7 @@ export class BaSummernote implements ControlValueAccessor{
   }
 
   writeValue(value){
-    console.log("============");
-    console.log(value);
-    jQuery(this.editorDemo.nativeElement).summernote("code");
+    // jQuery(this.editorDemo.nativeElement).summernote("code");
   }
 
 

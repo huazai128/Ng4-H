@@ -43,7 +43,8 @@
         "../node_modules/peity/jquery.peity.js",
         "../node_modules/summernote/dist/summernote.js",
         "../node_modules/summernote/lang/summernote-zh-CN.js",
-        "../node_modules/codemirror/lib/codemirror.js"
+        "../node_modules/codemirror/lib/codemirror.js",
+        "../node_modules/nestable/jquery.nestable.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {

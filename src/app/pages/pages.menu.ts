@@ -121,6 +121,44 @@ export const PAGES_MENU = [
         }
       },
       {
+        path: 'news',
+        data: {
+          menu: {
+            title: 'V2.0新增',
+            icon: 'fa fa-globe',
+            selected: false,
+            expanded: false,
+            order: 0
+          }
+        },
+        children: [
+          {
+            path: 'nestable_list',
+            data: {
+              menu: {
+                title: '嵌套列表',
+              }
+            }
+          },
+          {
+            path: 'detail',
+            data: {
+              menu: {
+                title: '查看邮件',
+              }
+            }
+          },
+          {
+            path: 'compose',
+            data: {
+              menu: {
+                title: '写信',
+              }
+            }
+          },
+        ]
+      },
+      {
         path: 'forms',
         data: {
           menu: {

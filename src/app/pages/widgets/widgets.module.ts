@@ -4,6 +4,7 @@ import { NgaModule } from "../../theme/nga.module";
 
 import { WidgetsComponent } from "./widgets.component";
 import { routing } from "./widgets.routing";
+import { WidgetsService } from "./widgets.service";
 
 @NgModule({
   imports:[
@@ -15,7 +16,7 @@ import { routing } from "./widgets.routing";
     WidgetsComponent
   ],
   providers:[
-
+    WidgetsService
   ]
 })
 

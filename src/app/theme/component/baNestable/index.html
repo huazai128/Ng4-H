@@ -1,0 +1,7 @@
+<div class="dd nestable" >
+  <ol class="dd-list {{classStr}}">
+    <nestable-child
+      [nestable]="item"
+      *ngFor="let item of nestableData"></nestable-child>
+  </ol>
+</div>

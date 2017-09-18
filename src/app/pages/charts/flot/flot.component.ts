@@ -1,13 +1,16 @@
-import { Component,ViewEncapsulation } from "@angular/core";
+import { Component,ViewEncapsulation,HostBinding } from "@angular/core";
+import { animat } from "../../../theme/animations";
 
 @Component({
   selector:"page-flot",
   templateUrl:'./flot.html',
   styleUrls:["./flot.scss"],
-  encapsulation:ViewEncapsulation.None
+  encapsulation:ViewEncapsulation.None,
+  animations:[animat]
 })
 
 export class FlotComponent{
+
   public barOptions = {
     series: {
       bars: {

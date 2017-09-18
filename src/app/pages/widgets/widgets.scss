@@ -1,0 +1,44 @@
+@import "../../theme/scss/conf/conf";
+
+.box-top{
+  margin-top: 20px;
+
+  & > .row{
+    margin-bottom: 30px;
+  }
+}
+.navy-bg{
+  background-color: $green;
+}
+
+
+.widget{
+  border-radius: 6px;
+
+  .p-m{
+    padding: 15px;
+    h1{
+      font-weight: 100;
+      font-size: 28px;
+    }
+    h3{
+      font-size: 16px;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+    span{
+      font-size: 12px;
+    }
+  }
+}
+
+.widget-pad{
+  padding: 15px;
+
+  span{
+    display: inline-block;
+    padding-bottom: 6px;
+  }
+}
+
+

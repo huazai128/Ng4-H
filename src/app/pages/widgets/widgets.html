@@ -1,1 +1,49 @@
-<h2>ViewEncapsulation</h2>
+<div class="box-top" [@enterLeave]="ins">
+  <div class="row">
+    <div class="col-lg-3 col-md-3" *ngFor="let item of data1">
+      <div class="widget widget-pad" [style.background-color]="item.background">
+        <div class="row">
+          <div class="col-sm-4 text-center">
+            <i class="fa {{ item.icon }}"></i>
+          </div>
+          <div class="col-sm-8 text-right">
+            <span> {{item.name}} </span>
+            <h2 class="font-bold">{{item.num}}</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row pad-bottom">
+    <ng-template [ngIf]="flotData && flotData.length">
+      <div *ngFor="let flot of flotData" class="col-lg-{{flot.cls}}">
+        <div class="widget navy-bg" [style.background]="flot.bg">
+          <div class="p-m">
+            <h1 class="m-xs">￥{{flot.money | baFormatNumber }}</h1>
+            <h3 class="font-bold no-margins">{{ flot.source }}</h3>
+            <small>{{ flot.name }}</small>
+          </div>
+
+          <ba-flot [dataset]="flot.data" [options]="flot.options" height="100px"></ba-flot>
+        </div>
+      </div>
+    </ng-template>
+  </div>
+
+  <div class="row pad-bottom">
+    <div class="col-md-2" *ngFor="let item of promptData">
+      <div class="widget widget-pad" [style.background]="item.bg">
+        <div class="row vertical-align">
+          <div class="col-sm-3">
+            <i class="fa fa-3x {{ item.icon || '' }}"></i>
+          </div>
+          <div class="col-sm-9 text-right">
+            <h2 class="font-bold">{{ item.num }}</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

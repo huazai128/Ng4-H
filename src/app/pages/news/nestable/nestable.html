@@ -1,0 +1,19 @@
+<div class="bestable-box">
+  <div class="row">
+    <div class="col-md-6">
+      <ba-card cardTitle="基本嵌套">
+        <p class="m-b-lg"><strong>Nestable</strong> 支持拖动排序和触摸屏。</p>
+        <ba-nestable [nestableData]="nestables">
+          <span class="pull-right"> 2121 </span>
+        </ba-nestable>
+      </ba-card>
+    </div>
+    <div class="col-md-6">
+      <ba-card cardTitle="自定义主题">
+        <p class="m-b-lg">每个列表可以自定义标准的CSS样式。每个单元响应所以你可以给它添加其他元素来改善功能列表。</p>
+        <ba-nestable [nestableData]="datas" classStr="nestable-pad"></ba-nestable>
+      </ba-card>
+    </div>
+  </div>
+
+</div>

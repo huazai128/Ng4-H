@@ -5,7 +5,7 @@ import "flot/jquery.flot.time.js";
 
 @Component({
   selector:"ba-flot",
-  template:`<div #flot class="flot-box"></div>`,
+  template:`<div #flot class="flot-box" [style.height]="height"></div>`,
   styles:[`
     :host{
       display: block;
@@ -23,6 +23,9 @@ export class BaFlotChartComponent{
   @Input() options:any;
 
   @Input() dataset:any;
+
+  @Input() height:string;
+
 
 
 
