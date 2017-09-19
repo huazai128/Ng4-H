@@ -141,10 +141,10 @@ export const PAGES_MENU = [
             }
           },
           {
-            path: 'detail',
+            path: 'timeline',
             data: {
               menu: {
-                title: '查看邮件',
+                title: '时间轴',
               }
             }
           },

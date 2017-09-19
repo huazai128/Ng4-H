@@ -12,3 +12,4 @@ export * from "./baEcharts";
 export * from "./baCheckbox";
 export * from "./baSummernote";
 export * from "./baNestable";
+export * from "./baTimeline";

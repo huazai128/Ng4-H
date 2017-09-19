@@ -9,6 +9,7 @@ $angle-right: '\f101';
   list-style: none;
   position: relative;
   display: none;
+  overflow: hidden;
   &.expanded {
     display: block;
   }

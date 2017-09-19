@@ -1,0 +1,21 @@
+<div class="vertical-container light-timeline vertical-timeline">
+
+  <div class="vertical-timeline-block" *ngFor="let item of timelineData">
+    <div class="vertical-timeline-icon" [style.background-color]="item.bg">
+      <i class="{{ item.icon }}"></i>
+    </div>
+    <div class="vertical-timeline-content">
+      <h2>{{ item.title }}</h2>
+      <p>{{ item.content }}</p>
+      <i [ngSwitch]="item.type">
+        <a *ngSwitchCase="'1'" class="btn btn-sm btn-primary"> 更多信息</a>
+        <a *ngSwitchCase="'2'" class="btn btn-sm btn-success"> 下载文档</a>
+        <a *ngSwitchCase="'3'" class="btn btn-sm btn-info"> 更多</a>
+      </i>
+      <span class="vertical-date">
+        {{ item.date }} <br>
+        <small>{{item.time}}</small>
+      </span>
+    </div>
+  </div>
+</div>

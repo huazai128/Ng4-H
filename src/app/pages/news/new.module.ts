@@ -1,12 +1,16 @@
 import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { NgaModule } from "../../theme/nga.module";
+import { routing } from "./new.routing";
+
 
 import { NewComponent } from "./new.component";
 import { NestableComponent } from "./nestable/nestable.component"
-import { routing } from "./new.routing";
-import { NestableSerivce } from "./nestable/nestable.serivce";
+import { TimelineComponent } from "./timeline/timeline.component";
 
+
+import { NestableSerivce } from "./nestable/nestable.serivce";
+import { TimelineService } from "./timeline/timeline.service"
 @NgModule({
   imports:[
     CommonModule,
@@ -15,10 +19,12 @@ import { NestableSerivce } from "./nestable/nestable.serivce";
   ],
   declarations:[
     NewComponent,
-    NestableComponent
+    NestableComponent,
+    TimelineComponent
   ],
   providers:[
-    NestableSerivce
+    NestableSerivce,
+    TimelineService
   ]
 })
 

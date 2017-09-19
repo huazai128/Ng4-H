@@ -21,7 +21,8 @@ import {
   BaCheckbox,
   BaSummernote,
   BaNestable,
-  ChildComponent
+  ChildComponent,
+  BaTimelineComponent
 } from "./component";
 const NGA_COMPONENT = [
   BaNavbarTopComponent,
@@ -39,7 +40,8 @@ const NGA_COMPONENT = [
   BaCheckbox,
   BaSummernote,
   BaNestable,
-  ChildComponent
+  ChildComponent,
+  BaTimelineComponent
 ]
 
 // 管道

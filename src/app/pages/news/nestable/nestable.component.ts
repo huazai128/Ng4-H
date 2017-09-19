@@ -1,11 +1,13 @@
-import { Component,ViewEncapsulation } from "@angular/core";
+import { Component,ViewEncapsulation,HostBinding } from "@angular/core";
 import { NestableSerivce } from "./nestable.serivce";
+import { animat } from "../../../theme/animations";
 
 @Component({
   selector:"page-nestable",
   templateUrl:"./nestable.html",
   styleUrls:["./nestable.scss"],
-  encapsulation:ViewEncapsulation.None
+  encapsulation:ViewEncapsulation.None,
+  animations:[animat]
 })
 
 export class NestableComponent{

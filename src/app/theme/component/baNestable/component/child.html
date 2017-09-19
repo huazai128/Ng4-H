@@ -1,15 +1,22 @@
 <li class="dd-item" [attr.data-id]="nestable.id">
   <div class="dd-handle">
-    <ng-content></ng-content>
     <span class="label label-info" *ngIf="nestable.icon" [style.background-color]="nestable.bg">
       <i class="{{nestable.icon || ''}}" [class.icon-fa]="nestable.icon"></i>
     </span> {{ nestable.name }}
   </div>
-  <ol class="dd-list" *ngIf="nestable.children">
-    <nestable-child
-      [nestable]="item"
-      *ngFor="let item of nestable.children">
-      <span class="pull-right" *ngIf="item.title">{{ item.title }}</span>
-    </nestable-child>
+  <ol class="dd-list" *ngIf="nestable?.children?.length">
+    <li class="dd-item" *ngFor="let item of nestable.children" [attr.data-id]="item.id">
+      <div class="dd-handle">
+        <span class="pull-right" *ngIf="item.title"> {{ item.title }} </span>
+        <span class="label label-info" *ngIf="item.icon" [style.background-color]="item.bg">
+          <i class="{{item.icon || ''}}" [class.icon-fa]="item.icon"></i>
+        </span> {{ item.name }}
+      </div>
+    </li>
+    <!--<nestable-child-->
+      <!--[nestable]="item"-->
+      <!--*ngFor="let item of nestable.children">-->
+      <!--<span class="pull-right" *ngIf="item.title">{{ item.title }}</span>-->
+    <!--</nestable-child>-->
   </ol>
 </li>
