@@ -10,6 +10,7 @@ export class PageOneService{
   ];
 
 
+
   public charts = [
     {
       color: "#f8ac59",

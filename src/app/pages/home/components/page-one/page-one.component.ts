@@ -31,6 +31,13 @@ export class PageOneComponent{
     barConfig:{
       fill: ["#1ab394", "#d7a0a7"],
       width:100
+    },
+    barConfig1:{
+      type: 'bar',
+      barWidth: 8,
+      height: '150px',
+      barColor: '#1ab394',
+      negBarColor: '#c6c6c6'
     }
   }
 

@@ -53,6 +53,7 @@
     "jquery-slimscroll": "^1.3.8",
     "jvectormap": "^2.0.4",
     "nestable": "^0.2.0",
+    "ng2-codemirror": "^1.1.3",
     "ng2modules-flot": "0.0.1",
     "ngx-bootstrap": "^1.9.1",
     "normalize.css": "^7.0.0",

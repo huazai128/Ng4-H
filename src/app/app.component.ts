@@ -21,7 +21,6 @@ export class AppComponent {
   ngOnInit(){
     // 全局
     this._state.subscribe('menu.isCollapsed', (isCollapsed) => {
-      // console.log(isCollapsed);
       this.isMenuCollapsed = isCollapsed;
     });
   }

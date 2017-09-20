@@ -149,10 +149,18 @@ export const PAGES_MENU = [
             }
           },
           {
-            path: 'compose',
+            path: 'codemirror',
             data: {
               menu: {
-                title: '写信',
+                title: '代码编辑器',
+              }
+            }
+          },
+          {
+            path: 'tree',
+            data: {
+              menu: {
+                title: '树形视图',
               }
             }
           },

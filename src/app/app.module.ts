@@ -10,11 +10,11 @@ import { routing } from "./app.routing";
 
 import { GlobalState } from "./global.state";
 import { AppService } from "./app.service";
+
 const APP_PROVIDERS = [
   GlobalState,
   AppService
 ]
-
 
 @NgModule({
   imports: [
