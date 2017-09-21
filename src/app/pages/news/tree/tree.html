@@ -8,11 +8,27 @@
   <div class="col-md-6 col-lg-6">
     <ba-card cardTitle="基本示例" selectType="ba-card-config">
       <ba-card-config></ba-card-config>
+      <div class="ibox-content">
+        <tree #treeFFS
+              [tree]="ffs"
+              (nodeRemoved)="onNodeRemoved($event)"
+              (nodeRenamed)="onNodeRenamed($event)"
+              (nodeSelected)="onNodeSelected($event)"
+              (nodeMoved)="onNodeMoved($event)"
+              (nodeCreated)="onNodeFFSCreated($event)"
+              (nodeExpanded)="onNodeExpanded($event)"
+              (nodeCollapsed)="onNodeCollapsed($event)">
+        </tree>
+      </div>
     </ba-card>
   </div>
   <div class="col-md-6 col-lg-6">
     <ba-card cardTitle="JSON示例" selectType="ba-card-config">
       <ba-card-config></ba-card-config>
+      <div class="ibox-content">
+        <tree [tree]="tree"
+              [settings]="options"></tree>
+      </div>
     </ba-card>
   </div>
 </div>

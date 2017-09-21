@@ -4,6 +4,7 @@ import { FormsModule,ReactiveFormsModule } from "@angular/forms";
 import { NgaModule } from "../../theme/nga.module";
 import { routing } from "./new.routing";
 import { CodemirrorModule } from "ng2-codemirror";
+import { TreeModule } from "ng2-tree";
 
 import { NewComponent } from "./new.component";
 import { NestableComponent } from "./nestable/nestable.component"
@@ -19,6 +20,7 @@ import { TimelineService } from "./timeline/timeline.service"
     FormsModule,
     ReactiveFormsModule,
     NgaModule,
+    TreeModule,
     CodemirrorModule,
     routing
   ],

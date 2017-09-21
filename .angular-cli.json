@@ -26,6 +26,7 @@
         "../node_modules/bootstrap/scss/bootstrap.scss",
         "../node_modules/codemirror/lib/codemirror.css",
         "../node_modules/summernote/dist/summernote.css",
+        "../node_modules/ng2-tree/styles.css",
         "app/theme/theme.scss",
         "styles.scss"
       ],
