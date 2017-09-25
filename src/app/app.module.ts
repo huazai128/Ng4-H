@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from"@angular/platform-browser/animations";
 import { NgModule } from '@angular/core';
+import { NgZorroAntdModule } from 'ng-zorro-antd';
 
 import { AppComponent } from './app.component';
 import { PagesModule } from "./pages/pages.module";
@@ -21,6 +22,7 @@ const APP_PROVIDERS = [
     BrowserModule,
     PagesModule,
     BrowserAnimationsModule,
+    NgZorroAntdModule.forRoot(),
     NgaModule.forRoot(),
     routing,
   ],

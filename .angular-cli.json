@@ -27,6 +27,8 @@
         "../node_modules/codemirror/lib/codemirror.css",
         "../node_modules/summernote/dist/summernote.css",
         "../node_modules/ng2-tree/styles.css",
+        "../node_modules/ion-rangeslider/css/ion.rangeSlider.css",
+        "../node_modules/ion-rangeslider/css/ion.rangeSlider.skinFlat.css",
         "app/theme/theme.scss",
         "styles.scss"
       ],
@@ -42,7 +44,8 @@
         "../bower_components/flot.tooltip/js/jquery.flot.tooltip.js",
         "../node_modules/easy-pie-chart/dist/jquery.easypiechart.js",
         "../node_modules/summernote/dist/summernote.js",
-        "../node_modules/summernote/lang/summernote-zh-CN.js"
+        "../node_modules/summernote/lang/summernote-zh-CN.js",
+        "../node_modules/ion-rangeslider/js/ion.rangeSlider.min.js"
 
       ],
       "environmentSource": "environments/environment.ts",

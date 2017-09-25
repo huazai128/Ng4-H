@@ -1,0 +1,21 @@
+@import "../../../../theme/scss/conf/conf";
+
+.hr-line-dashed{
+  width: 100%;
+  height: 1px;
+  margin-bottom: 25px;
+  border-bottom: 1px dashed #e5e5e5;
+}
+
+.all-form{
+  label,p{
+    color: #fff;
+  }
+  label{
+    font-weight: 600;
+    color: $green;
+  }
+}
+.ant-form-item{
+  margin-bottom: 15px;
+}

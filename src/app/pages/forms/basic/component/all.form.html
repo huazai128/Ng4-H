@@ -1,0 +1,303 @@
+<ba-card cardTitle="所有表单元素" selectType="ba-card-config">
+  <ba-card-config ></ba-card-config>
+
+  <form nz-form [formGroup]="editForm" class="all-form" (ngSubmit)="editSave()">
+    <div nz-form-item nz-row>
+      <div nz-form-label nz-col [nzMd]="4">
+        <label>普通</label>
+      </div>
+      <div nz-col
+           [nzMd]="20"
+           nz-form-control
+           [nzValidateStatus]="editForm.controls.common">
+        <nz-input formControlName="common" [nzSize]="'large'"></nz-input>
+      </div>
+    </div>
+    <div class="hr-line-dashed"></div>
+    <div nz-form-item nz-row>
+      <div nz-form-label nz-col [nzMd]="4">
+        <label>带说明信息</label>
+      </div>
+      <div nz-col
+           [nzMd]="20"
+           nz-form-control
+           [nzValidateStatus]="editForm.controls.info">
+        <nz-input formControlName="info" [nzSize]="'large'"></nz-input>
+      </div>
+      <div nz-row nz-form-extra >
+        <p nz-col [nzOffset]="'2'">帮助文本，可能会超过一行，以块级元素显示</p>
+      </div>
+    </div>
+    <div class="hr-line-dashed"></div>
+    <div nz-form-item nz-row>
+      <div nz-form-label nz-col [nzMd]="4">
+        <label>密码</label>
+      </div>
+      <div nz-col
+           [nzMd]="20"
+           nz-form-control
+           [nzValidateStatus]="editForm.controls.password">
+        <nz-input formControlName="password" [nzSize]="'large'"></nz-input>
+      </div>
+
+    </div>
+
+    <div class="hr-line-dashed"></div>
+    <div nz-form-item nz-row>
+      <div nz-form-label nz-col [nzMd]="4">
+        <label>提示</label>
+      </div>
+      <div nz-col
+           [nzMd]="20"
+           nz-form-control
+           [nzValidateStatus]="editForm.controls.prompt">
+        <nz-input formControlName="prompt" [nzPlaceHolder]="'提示信息'" [nzSize]="'large'"></nz-input>
+      </div>
+    </div>
+
+    <div class="hr-line-dashed"></div>
+    <div nz-form-item nz-row>
+      <div nz-form-label nz-col [nzMd]="4">
+        <label>禁用</label>
+      </div>
+      <div nz-col
+           [nzMd]="20"
+           nz-form-control
+           [nzValidateStatus]="editForm.controls.disable">
+        <nz-input [nzDisabled]="'true'"
+                  formControlName="disable"
+                  [nzPlaceHolder]="'禁用'"
+                  [nzSize]="'large'"></nz-input>
+      </div>
+    </div>
+
+    <div class="hr-line-dashed"></div>
+    <div nz-form-item nz-row>
+      <div nz-form-label nz-col [nzMd]="4">
+        <label>静态控制</label>
+      </div>
+      <div nz-col
+           [nzMd]="20"
+           nz-form-control>
+        <p>i@zi-han.net</p>
+      </div>
+    </div>
+
+    <div class="hr-line-dashed"></div>
+    <div nz-form-item nz-row>
+      <div nz-form-label nz-col [nzMd]="4">
+        <label>复选框&单选框</label>
+      </div>
+      <div nz-col [nzMd]="20">
+        <p>
+          <label nz-checkbox formControlName="_checked">
+            <span>选项1</span>
+          </label>
+        </p>
+        <div nz-form-control>
+          <nz-radio-group formControlName="radio_group">
+            <label nz-radio [nzValue]="1">
+              <span>item 1</span>
+            </label>
+            <label nz-radio [nzValue]="2">
+              <span>item 2</span>
+            </label>
+            <label nz-radio [nzValue]="3">
+              <span>item 3</span>
+            </label>
+          </nz-radio-group>
+        </div>
+      </div>
+    </div>
+
+    <div class="hr-line-dashed"></div>
+    <div nz-form-item nz-row>
+      <div nz-form-label nz-col [nzMd]="4">
+        <label>内联复选框</label>
+      </div>
+      <div nz-col nz-form-control [nzMd]="20"  [nzValidateStatus]="editForm.controls.radio_group">
+        <nz-radio-group formControlName="radio_group">
+          <label nz-radio [nzValue]="1">
+            <span>item 1</span>
+          </label>
+          <label nz-radio [nzValue]="2">
+            <span>item 2</span>
+          </label>
+          <label nz-radio [nzValue]="3">
+            <span>item 3</span>
+          </label>
+        </nz-radio-group>
+      </div>
+    </div>
+
+    <div class="hr-line-dashed"></div>
+    <div nz-form-item nz-row>
+      <div nz-form-label nz-col [nzMd]="4">
+        <label>复选框&单选框</label>
+      </div>
+      <div nz-col  [nzMd]="20">
+        <div nz-form-control [nzValidateStatus]="editForm.controls.allCheck">
+          <nz-checkbox-group  formControlName="allCheck" [(ngModel)]="checkOptionsOne" (ngModelChange)="_log(checkOptionsOne)"></nz-checkbox-group>
+        </div>
+        <div nz-form-control [nzValidateStatus]="editForm.controls.allRadio">
+          <nz-radio-group formControlName="allRadio">
+            <label nz-radio [nzValue]="1">
+              <span>item 1</span>
+            </label>
+            <label nz-radio [nzValue]="2">
+              <span>item 2</span>
+            </label>
+            <label nz-radio [nzValue]="3">
+              <span>item 3</span>
+            </label>
+          </nz-radio-group>
+        </div>
+      </div>
+    </div>
+
+    <div class="hr-line-dashed"></div>
+    <div nz-form-item nz-row>
+      <div nz-form-label nz-col [nzMd]="4">
+        <label>复选框&单选框</label>
+      </div>
+      <div nz-col [nzMd]="20" nz-form-control [nzValidateStatus]="editForm.controls.slt">
+        <nz-select  formControlName="slt" style="width: 200px;" [(ngModel)]="single" [nzSize]="size">
+          <nz-option
+            *ngFor="let option of options"
+            [nzLabel]="option.label"
+            [nzValue]="option.value"
+            [nzDisabled]="option.disabled">
+          </nz-option>
+        </nz-select>
+      </div>
+    </div>
+    <div class="hr-line-dashed"></div>
+    <div nz-form-item nz-row>
+      <div nz-form-label nz-col [nzMd]="4">
+        <label>验证通过</label>
+      </div>
+      <div nz-form-control [nzValidateStatus]="'error'" nz-col [nzMd]="20">
+        <nz-input formControlName="slt"  [nzSize]="'large'" name="errorValid">
+        </nz-input>
+      </div>
+    </div>
+    <div class="hr-line-dashed"></div>
+    <div nz-form-item nz-row>
+      <div nz-form-label nz-col [nzMd]="4">
+        <label>Warning</label>
+      </div>
+      <div nz-form-control [nzValidateStatus]="'warning'" nz-col [nzMd]="20">
+        <nz-input formControlName="slt"  [nzSize]="'large'" name="warningValid">
+        </nz-input>
+      </div>
+    </div>
+    <div class="hr-line-dashed"></div>
+    <div nz-form-item nz-row>
+      <div nz-form-label nz-col [nzMd]="4">
+        <label>Validating</label>
+      </div>
+      <div nz-col [nzMd]="20" nz-form-control [nzValidateStatus]="'validating'" nzHasFeedback>
+        <nz-input formControlName="slt" [nzSize]="'large'" name="validating">
+        </nz-input>
+      </div>
+    </div>
+
+    <div class="hr-line-dashed"></div>
+    <div nz-form-item nz-row>
+      <div nz-form-label nz-col [nzMd]="4">
+        <label>搜索</label>
+      </div>
+      <div nz-col [nzMd]="20" nz-form-control [nzValidateStatus]="'editForm.controls.search'" nzHasFeedback>
+        <nz-input formControlName="search" [nzType]="'search'" [nzPlaceHolder]="'input search text'"></nz-input>
+      </div>
+    </div>
+
+    <div class="hr-line-dashed"></div>
+    <div nz-form-item nz-row>
+      <div nz-form-label nz-col [nzMd]="4">
+        <label for="" >文本框组</label>
+      </div>
+
+      <div nz-form-control nz-col [nzMd]="20" [nzValidateStatus]="'editForm.controls.url'">
+        <nz-input formControlName="url">
+          <ng-template #addOnBefore>http://</ng-template>
+          <ng-template #addOnAfter>.com</ng-template>
+        </nz-input>
+      </div>
+    </div>
+    <div class="hr-line-dashed"></div>
+    <div nz-form-item nz-row>
+      <div nz-form-label nz-col [nzMd]="4">
+        <label for="" >文本框组</label>
+      </div>
+      <div nz-form-control nz-col [nzMd]="20" [nzValidateStatus]="'editForm.controls.url'">
+        <nz-input formControlName="url" [nzPlaceHolder]="'用户名'">
+          <ng-template #addOnBefore>@</ng-template>
+        </nz-input>
+      </div>
+    </div>
+    <div class="hr-line-dashed"></div>
+    <div nz-form-item nz-row>
+      <div nz-form-label nz-col [nzMd]="4">
+        <label for="" >文本框组</label>
+      </div>
+      <div nz-form-control nz-col [nzMd]="20" [nzValidateStatus]="'editForm.controls.url'">
+        <nz-input formControlName="url" [nzPlaceHolder]="'金额'">
+          <ng-template #addOnBefore>￥</ng-template>
+          <ng-template #addOnAfter>.00</ng-template>
+        </nz-input>
+      </div>
+    </div>
+    <div class="hr-line-dashed"></div>
+    <div nz-form-item nz-row>
+      <div nz-form-label nz-col [nzMd]="4">
+        <label for="" nz-form-item-required>手机号</label>
+      </div>
+      <div nz-form-control nz-col [nzMd]="20" nzHasFeedback>
+        <nz-input-group [nzSize]="'large'" [nzCompact]="true">
+          <nz-select formControlName="phoneNumberPrefix" style="width: 25%;">
+            <nz-option [nzLabel]="'+86'" [nzValue]="'+86'"></nz-option>
+            <nz-option [nzLabel]="'+87'" [nzValue]="'+87'"></nz-option>
+          </nz-select>
+          <input formControlName="phoneNumber" id="'phoneNumber'" nz-input style="width: 75%;">
+        </nz-input-group>
+      </div>
+    </div>
+
+    <div class="hr-line-dashed"></div>
+    <div nz-form-item nz-row>
+      <div nz-form-label nz-col [nzMd]="4">
+        <label nz-form-item-required>日期</label>
+      </div>
+      <div>
+        <div nz-form-control>
+          <div nz-col [nzMd]="6">
+            <div nz-form-item nz-row>
+              <div>
+                <div nz-form-control [nzValidateStatus]="'error'">
+                  <nz-datepicker [nzSize]="'large'" [nzPlaceHolder]="'Select date'"></nz-datepicker>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div nz-col [nzMd]="1">
+            <p nz-form-split>-</p>
+          </div>
+
+          <div nz-col [nzMd]="6">
+            <div nz-form-item nz-row>
+              <div>
+                <div nz-form-control>
+                  <nz-datepicker [nzSize]="'large'" [nzPlaceHolder]="'Select date'"></nz-datepicker>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div nz-form-control nz-col [nzMd]="20">
+
+      </div>
+    </div>
+  </form>
+</ba-card>

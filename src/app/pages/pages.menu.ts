@@ -187,14 +187,6 @@ export const PAGES_MENU = [
             }
           },
           {
-            path: 'validate',
-            data: {
-              menu: {
-                title: '表单验证',
-              }
-            }
-          },
-          {
             path: 'plugin',
             data: {
               menu: {

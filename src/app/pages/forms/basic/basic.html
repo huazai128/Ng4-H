@@ -1,0 +1,159 @@
+<div nz-row [nzGutter]="16" class="form-basic">
+  <div nz-col [nzMd]="14">
+    <ba-card cardTitle="基本表单" selectType="ba-card-config">
+      <ba-card-config></ba-card-config>
+      <div nz-row [nzGutter]="16">
+        <div nz-col [nzMd]="12" class="ba-border">
+          <div class="ibox-form">
+            <h3 class="m-t-none m-b">登录</h3>
+            <p>欢迎登录本站(⊙o⊙)</p>
+            <form nz-form [formGroup]="validateForm" (ngSubmit)="_submitForm()">
+              <div nz-form-item >
+                <div nz-form-label>
+                  <label for="email"><strong>用户名</strong></label>
+                </div>
+                <div nz-form-control [nzValidateStatus]="validateForm.controls.email">
+                  <nz-input formControlName="email"
+                            [nzPlaceHolder]="'请输入您注册的E-mail'"
+                            [nzSize]="'large'"
+                            id="email" >
+                    <ng-template #prefix>
+                      <i class="anticon anticon-user"></i>
+                    </ng-template>
+                  </nz-input>
+                </div>
+              </div>
+              <div nz-form-item >
+                <div nz-form-label>
+                  <label for="password"><strong>密码</strong></label>
+                </div>
+                <div nz-form-control [nzValidateStatus]="validateForm.controls.password">
+                  <nz-input formControlName="password"
+                            [nzPlaceHolder]="'请输入密码'" [nzSize]="'large'">
+                    <ng-template #prefix>
+                      <i class="anticon anticon-lock"></i>
+                    </ng-template>
+                  </nz-input>
+                </div>
+              </div>
+              <div nz-form-item>
+                <div nz-form-control>
+                  <label class="pull-left" nz-checkbox formControlName="remember">
+                    <span>自动登录</span>
+                  </label>
+                  <button class="pull-right" nz-button [nzType]="'primary'" [nzSize]="'large'">登录</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div nz-col [nzMd]="12" class="ba-reg">
+          <h4 style="padding-left: 15px;">还不是会员？</h4>
+          <p style="padding-left: 15px;">您可以注册一个新账户</p>
+          <p class="text-center">
+            <a ><i class="fa fa-sign-in big-icon"></i></a>
+          </p>
+        </div>
+      </div>
+    </ba-card>
+  </div>
+  <div nz-col [nzMd]="10">
+    <ba-card cardTitle="横向表单" selectType="ba-card-config">
+      <ba-card-config></ba-card-config>
+      <div class="ibox-form">
+        <p style="margin-bottom: 10px">欢迎登录本站(⊙o⊙)</p>
+        <form nz-form [formGroup]="validateForm" (ngSubmit)="_submitForm()">
+          <div nz-form-item nz-row>
+            <div nz-form-label nz-col [nzSm]="6" [nzXs]="24" >
+              <label for="email"><strong>用户名</strong></label>
+            </div>
+            <div nz-form-control
+                 nz-col [nzSm]="18" [nzXs]="24"
+                 [nzValidateStatus]="validateForm.controls.email">
+              <nz-input formControlName="email"
+                        [nzPlaceHolder]="'请输入您注册的E-mail'"
+                        [nzSize]="'large'"
+                        id="email" >
+                <ng-template #prefix>
+                  <i class="anticon anticon-user"></i>
+                </ng-template>
+              </nz-input>
+            </div>
+          </div>
+          <div nz-form-item nz-row>
+            <div nz-form-label nz-col [nzSm]="6" [nzXs]="24">
+              <label for="password"><strong>密码</strong></label>
+            </div>
+            <div nz-form-control
+                 nz-col [nzSm]="18" [nzXs]="24"
+                 [nzValidateStatus]="validateForm.controls.password">
+              <nz-input formControlName="password"
+                        [nzPlaceHolder]="'请输入密码'" [nzSize]="'large'">
+                <ng-template #prefix>
+                  <i class="anticon anticon-lock"></i>
+                </ng-template>
+              </nz-input>
+            </div>
+          </div>
+          <div nz-form-item nz-row>
+            <div nz-form-control nz-col [nzOffset]="'6'" [nzSm]="16" [nzXs]="24">
+              <button nz-button [nzType]="'primary'" [nzSize]="'large'">登录</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </ba-card>
+  </div>
+</div>
+<div nz-row [nzGutter]="16" class="form-basic">
+  <div nz-col [nzMd]="16" [nzXs]="24">
+    <ba-card cardTitle="内联表单" selectType="ba-card-config">
+      <ba-card-config></ba-card-config>
+      <form nz-form [formGroup]="editForm"
+            [nzLayout]="'inline'"
+            (ngSubmit)="editFrom()">
+        <div nz-form-item>
+          <div nz-form-control [nzValidateStatus]="editForm.controls.email">
+            <nz-input formControlName="email" [nzPlaceHolder]="'Email'" [nzSize]="'large'">
+              <ng-template #prefix>
+                <i class="anticon anticon-user"></i>
+              </ng-template>
+            </nz-input>
+            <div nz-form-explain *ngIf="editForm.controls.email.dirty && editForm.controls.email.hasError('required')">请输入您的Email</div>
+          </div>
+        </div>
+        <div nz-form-item>
+          <div nz-form-control [nzValidateStatus]="editForm.controls.password">
+            <nz-input formControlName="password" [nzType]="'password'" [nzPlaceHolder]="'Password'" [nzSize]="'large'">
+              <ng-template #prefix>
+                <i class="anticon anticon-lock"></i>
+              </ng-template>
+            </nz-input>
+            <div nz-form-explain *ngIf="editForm.controls.password.dirty&&editForm.controls.password.hasError('required')">请输入您的密码</div>
+          </div>
+        </div>
+        <button nz-button
+                [nzType]="'primary'"
+                [nzSize]="'large'"
+                [disabled]="!editForm.valid">登录</button>
+      </form>
+    </ba-card>
+  </div>
+  <div nz-col [nzMd]="8" [nzXs]="24">
+    <ba-card cardTitle="弹出表单" selectType="ba-card-config">
+      <ba-card-config></ba-card-config>
+      <div>
+        <p class="text-center">
+          <button nz-button [nzType]="'primary'" class="btn btn-success btn-auto" (click)="showModalComponent()">
+            <span>打开登录窗口</span>
+          </button>
+        </p>
+      </div>
+    </ba-card>
+  </div>
+</div>
+<div nz-row [nzGutter]="16" class="form-basic">
+  <div nz-col [nzMd]="24" [nzXs]="24">
+    <all-form></all-form>
+  </div>
+</div>

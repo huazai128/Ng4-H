@@ -2,6 +2,7 @@ import { NgModule,ModuleWithProviders,NO_ERRORS_SCHEMA } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { RouterModule } from '@angular/router';
 
+
 import { BaThemeConfigProvider } from "./theme.configProvider";
 
 // 组件
@@ -22,7 +23,8 @@ import {
   BaSummernote,
   BaNestable,
   ChildComponent,
-  BaTimelineComponent
+  BaTimelineComponent,
+  BaIonRangeSliderComponent
 } from "./component";
 const NGA_COMPONENT = [
   BaNavbarTopComponent,
@@ -41,7 +43,8 @@ const NGA_COMPONENT = [
   BaSummernote,
   BaNestable,
   ChildComponent,
-  BaTimelineComponent
+  BaTimelineComponent,
+  BaIonRangeSliderComponent
 ]
 
 // 管道

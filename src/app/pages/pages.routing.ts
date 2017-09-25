@@ -11,7 +11,8 @@ const routes:Routes = [
       { path:"charts",loadChildren:"app/pages/charts/charts.module#ChartsModule" },
       { path:"email",loadChildren:"app/pages/email/email.module#EmailModule" },
       { path:"widgets",loadChildren:"app/pages/widgets/widgets.module#WidgetsModule" },
-      { path:"news",loadChildren:"app/pages/news/new.module#NewModule" }
+      { path:"news",loadChildren:"app/pages/news/new.module#NewModule" },
+      { path:"forms",loadChildren:"app/pages/forms/forms.module#FormModule" }
     ]
   }
 ]
