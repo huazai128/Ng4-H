@@ -8,8 +8,10 @@ import { Component } from "@angular/core";
 
 export class PluginComponent{
 
-  _formatOne = percent => `${percent} Days`;
-  _formatTwo = percent => `Done`;
+  public swithcValue:boolean = false;
+
+  public _formatOne = percent => `${percent} Days`;
+  public _formatTwo = percent => `Done`;
 
   public ionOps = [
     {
@@ -59,4 +61,8 @@ export class PluginComponent{
   ]
 
   constructor(){}
+
+  getChange(){
+
+  }
 }

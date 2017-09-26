@@ -1,7 +1,7 @@
 import { NgModule,ModuleWithProviders,NO_ERRORS_SCHEMA } from "@angular/core";
 import { CommonModule } from "@angular/common";
+import { FormsModule } from "@angular/forms";
 import { RouterModule } from '@angular/router';
-
 
 import { BaThemeConfigProvider } from "./theme.configProvider";
 
@@ -24,7 +24,8 @@ import {
   BaNestable,
   ChildComponent,
   BaTimelineComponent,
-  BaIonRangeSliderComponent
+  BaIonRangeSliderComponent,
+  BaSwitchComponent
 } from "./component";
 const NGA_COMPONENT = [
   BaNavbarTopComponent,
@@ -44,7 +45,8 @@ const NGA_COMPONENT = [
   BaNestable,
   ChildComponent,
   BaTimelineComponent,
-  BaIonRangeSliderComponent
+  BaIonRangeSliderComponent,
+  BaSwitchComponent
 ]
 
 // 管道
@@ -77,7 +79,8 @@ const NGA_DIRECTIVES = [
 @NgModule({
   imports:[
     CommonModule,
-    RouterModule
+    RouterModule,
+    FormsModule
   ],
   exports:[
     ...NGA_COMPONENT,
