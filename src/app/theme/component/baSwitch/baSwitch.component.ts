@@ -1,6 +1,6 @@
 import { Component,Input,ElementRef,ViewChild,Self } from "@angular/core";
 import { ControlValueAccessor,NgModel } from "@angular/forms";
-import Switchery from 'switchery';
+
 
 @Component({
   selector:"ba-switch",
@@ -19,7 +19,6 @@ export class BaSwitchComponent implements ControlValueAccessor{
   @Input() options:any;
   public model:NgModel;
   public state:boolean;
-  private switchery:any;
 
   public onTouchedCallback = (checked: boolean) => {}
   public onChangeCallback = (checked: boolean) => {}
@@ -42,7 +41,7 @@ export class BaSwitchComponent implements ControlValueAccessor{
   }
 
   ngOnInit(){
-    new Switchery(this._el.nativeElement,Object.assign(this.defaults,this.options));
+
   }
 
   writeValue(state){

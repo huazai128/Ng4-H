@@ -22,7 +22,3 @@ interface WebpackRequire {
 interface NodeRequire extends WebpackRequire {}
 declare var require: NodeRequire;
 
-
-declare var Switchery:any;
-
-
