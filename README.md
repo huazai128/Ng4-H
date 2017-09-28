@@ -24,27 +24,24 @@ npm start
 npm run build --prod --aot
 
 
+
 # Screenshots
 
- 部分页面内效果
+ 首页
   
- <img src="https://github.com/huazai128/Ng4-H/blob/master/src/assets/img/index01.png">
- 
- <img src="https://github.com/huazai128/Ng4-H/blob/master/src/assets/img/index02.png">
- 
- <img src="https://github.com/huazai128/Ng4-H/blob/master/src/assets/img/index03.png">
- 
- <img src="https://github.com/huazai128/Ng4-H/blob/master/src/assets/img/index04.png">
- 
- <img src="https://github.com/huazai128/Ng4-H/blob/master/src/assets/img/index05.png">
- 
- <img src="https://github.com/huazai128/Ng4-H/blob/master/src/assets/img/index06.png">
- 
- <img src="https://github.com/huazai128/Ng4-H/blob/master/src/assets/img/index07.png">
- 
-  <img src="https://github.com/huazai128/ng2-admin-blog/blob/master/src/assets/img/index05.jpeg">
+ <img src="https://github.com/huazai128/ng2-admin-blog/blob/master/src/assets/img/index03.jpeg">
   
-  
+ <img src="https://github.com/huazai128/ng2-admin-blog/blob/master/src/assets/img/index04.jpeg">
+ 
+ <img src="https://github.com/huazai128/ng2-admin-blog/blob/master/src/assets/img/index05.jpeg">
+ 
+ 
+ 公告管理
+
+  <img src="https://github.com/huazai128/ng2-admin-blog/blob/master/src/assets/img/index01.jpeg">
+ 
+  <img src="https://github.com/huazai128/ng2-admin-blog/blob/master/src/assets/img/index02.jpeg">
+ 
  
 # Update
   
