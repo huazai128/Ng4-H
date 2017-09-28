@@ -1,13 +1,20 @@
 
-# Angular-Admin
-Admin panel framework based on Angular4, Bootstrap4 and Webpack2.
-
-The project forked from [ng2-admin](https://akveo.github.io/ng2-admin/).
-
-The api of this project is accompanied by the [nodepress]
-
-(https://github.com/huazai128/nodepress) program, and if you want to run up, you need to 
-install [nodepress](https://github.com/huazai128/nodepress).
+# Angular开发后台
+ 1、angular4
+ 
+ 2、bootstrap@4.0.0-alpha.6
+ 
+ 3、Rxjs
+ 
+ 4、g2-codemirror
+ 
+ 5、jquery
+ 
+ 6、ng-zorro-antd
+ 
+ 7、ngx-bootstrap
+ 
+ 8、echarts
 
 # 执行命令
 ```bash
@@ -18,10 +25,7 @@ cnpm install
 npm start
 
 # 构建
-npm run build:prod
-
-# 生产，可以用nginx映射dist，不必要开node进程
-npm run server:prod
+npm run build --prod --aot
 ```
 
 
@@ -44,12 +48,6 @@ npm run server:prod
  <img src="https://github.com/huazai128/Ng4-H/blob/master/src/assets/img/index07.png">
  
  <img src="https://github.com/huazai128/Ng4-H/blob/master/src/assets/img/index08.png">
- 
- 公告管理
-
-  <img src="https://github.com/huazai128/ng2-admin-blog/blob/master/src/assets/img/index01.jpeg">
- 
-  <img src="https://github.com/huazai128/ng2-admin-blog/blob/master/src/assets/img/index02.jpeg">
  
  
 # Update
