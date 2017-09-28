@@ -1,16 +1,13 @@
-# Angular4开发后台模板(有个人完成，项目还在进行中...)
 
-# 使用的技术包括：
-  1、angular4
-  2、bootstrap
-  3、jquery
-  4、ng-zorro-antd
-  5、rxjs
-  6、angular2-jwt
-  7、animate
-  8、echarts
-  9、codemirror
-  ...
+# Angular-Admin
+Admin panel framework based on Angular4, Bootstrap4 and Webpack2.
+
+The project forked from [ng2-admin](https://akveo.github.io/ng2-admin/).
+
+The api of this project is accompanied by the [nodepress]
+
+(https://github.com/huazai128/nodepress) program, and if you want to run up, you need to 
+install [nodepress](https://github.com/huazai128/nodepress).
 
 # 执行命令
 ```bash
@@ -21,8 +18,11 @@ cnpm install
 npm start
 
 # 构建
-npm run build --prod --aot
+npm run build:prod
 
+# 生产，可以用nginx映射dist，不必要开node进程
+npm run server:prod
+```
 
 
 # Screenshots
@@ -46,6 +46,5 @@ npm run build --prod --aot
 # Update
   
   继续更新～～～
-  
  
  
