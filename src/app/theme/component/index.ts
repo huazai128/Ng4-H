@@ -14,3 +14,4 @@ export * from "./baSummernote";
 export * from "./baNestable";
 export * from "./baTimeline";
 export * from "./baIonRangeSlider";
+export * from "./baSwitchery";

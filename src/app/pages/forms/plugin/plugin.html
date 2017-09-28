@@ -22,7 +22,13 @@
         <ba-card cardTitle="切换开关" selectType="ba-card-config">
           <ba-card-config></ba-card-config>
           <div class="switch-box">
-            <!--<ui-switch switchColor="#fcfcfc"></ui-switch>-->
+            <ba-switchery checked switchColor="#fcfcfc"></ba-switchery>
+            <br/>
+            <br/>
+            <ba-switchery size="small" switchColor="#fcfcfc" [disabled]="true"></ba-switchery>
+            <br/>
+            <br/>
+            <ba-switchery size="large" defaultBgColor="rgb(237, 85, 101)"></ba-switchery>
           </div>
         </ba-card>
       </div>
@@ -42,5 +48,39 @@
         </ng-template>
       </div>
     </ba-card>
+  </div>
+</div>
+
+
+<div nz-row [nzGutter]="16" class="date-box">
+  <div nz-col [nzMd]="12">
+    <div nz-row>
+      <div nz-col [nzMd]="24">
+        <ba-card cardTitle="日期选择器" selectType="ba-card-config">
+          <ba-card-config></ba-card-config>
+          <h3>日期选择器</h3>
+          <p>简单好用的日期选择器</p>
+          <div class="data-group">
+            <span>简单示例</span>
+            <nz-datepicker [(ngModel)]="_date" style="width:80%;" [nzPlaceHolder]="'Select date'" [nzFormat]="'YYYY/MM/DD'"></nz-datepicker>
+          </div>
+          <div class="data-group">
+            <span>日期范围一</span>
+            <nz-datepicker style="width: 40%;" (ngModelChange)="_startDate=$event;_startValueChange()" [ngModel]="_startDate" [nzDisabledDate]="_disabledStartDate" [nzShowTime]="true" [nzFormat]="'YYYY-MM-DD HH:mm:ss'" [nzPlaceHolder]="'Start date'"></nz-datepicker>
+            <nz-datepicker style="width: 40%" (ngModelChange)="_endDate=$event;_endValueChange()" [ngModel]="_endDate" [nzDisabledDate]="_disabledEndDate" [nzShowTime]="_endTime" [nzFormat]="'YYYY-MM-DD HH:mm:ss'" [nzPlaceHolder]="'End date'"></nz-datepicker>
+          </div>
+        </ba-card>
+      </div>
+    </div>
+
+    <div nz-row>
+      <div nz-col [nzMd]="24">
+        <ba-card cardTitle="日期选择器" selectType="ba-card-config">
+          <ba-card-config></ba-card-config>
+
+        </ba-card>
+      </div>
+    </div>
+
   </div>
 </div>
