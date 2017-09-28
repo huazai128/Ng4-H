@@ -26,7 +26,7 @@ npm run build --prod --aot
 
 # Screenshots
 
- 部分页面内效果，
+ 部分页面内效果
   
  <img src="https://github.com/huazai128/Ng4-H/blob/master/src/assets/img/index01.png">
  
