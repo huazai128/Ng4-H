@@ -28,21 +28,22 @@ npm run build --prod --aot
 
  部分页面内效果，
   
- <img src="https://github.com/huazai128/Ng4-H/tree/master/src/assets/img/index03.png">
-  
- <img src="https://github.com/huazai128/Ng4-H/tree/master/src/assets/img/index04.png">
+ <img src="https://github.com/huazai128/Ng4-H/blob/master/src/assets/img/index01.png">
  
- <img src="https://github.com/huazai128/Ng4-H/tree/master/src/assets/img/index05.png">
-
-  <img src="https://github.com/huazai128/Ng4-H/tree/master/src/assets/img/index01.png">
+ <img src="https://github.com/huazai128/Ng4-H/blob/master/src/assets/img/index02.png">
  
-  <img src="https://github.com/huazai128/Ng4-H/tree/master/src/assets/img/index02.png">
-
-  <img src="https://github.com/huazai128/Ng4-H/tree/master/src/assets/img/index06.png">
+ <img src="https://github.com/huazai128/Ng4-H/blob/master/src/assets/img/index03.png">
+ 
+ <img src="https://github.com/huazai128/Ng4-H/blob/master/src/assets/img/index04.png">
+ 
+ <img src="https://github.com/huazai128/Ng4-H/blob/master/src/assets/img/index05.png">
+ 
+ <img src="https://github.com/huazai128/Ng4-H/blob/master/src/assets/img/index06.png">
+ 
+ <img src="https://github.com/huazai128/Ng4-H/blob/master/src/assets/img/index07.png">
+ 
+ <img src="https://github.com/huazai128/Ng4-H/blob/master/src/assets/img/index08.png">
   
-  <img src="https://github.com/huazai128/Ng4-H/tree/master/src/assets/img/index07.png">
-  
-  <img src="https://github.com/huazai128/Ng4-H/tree/master/src/assets/img/index08.png">
   
  
 # Update
