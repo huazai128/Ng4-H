@@ -8,8 +8,6 @@ import { Component } from "@angular/core";
 
 export class PluginComponent{
 
-  public swithcValue:boolean = false;
-
   public _formatOne = percent => `${percent} Days`;
   public _formatTwo = percent => `Done`;
 

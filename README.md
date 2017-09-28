@@ -1,28 +1,53 @@
-# Ng4H
+# Angular4开发后台模板(有个人完成，项目还在进行中...)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.0.
+# 使用的技术包括：
+  1、angular4
+  2、bootstrap
+  3、jquery
+  4、ng-zorro-antd
+  5、rxjs
+  6、angular2-jwt
+  7、animate
+  8、echarts
+  9、codemirror
+  ...
 
-## Development server
+# 执行命令
+```bash
+# 能用npm还是不要用cnpm的好
+cnpm install
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+# 开发
+npm start
 
-## Code scaffolding
+# 构建
+npm run build --prod --aot
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
 
-## Build
+# Screenshots
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+ 部分页面内效果，
+  
+ <img src="https://github.com/huazai128/ng2-admin-blog/blob/master/src/assets/img/index03.jpeg">
+  
+ <img src="https://github.com/huazai128/ng2-admin-blog/blob/master/src/assets/img/index04.jpeg">
+ 
+ <img src="https://github.com/huazai128/ng2-admin-blog/blob/master/src/assets/img/index05.jpeg">
 
-## Running unit tests
+  <img src="https://github.com/huazai128/ng2-admin-blog/blob/master/src/assets/img/index01.jpeg">
+ 
+  <img src="https://github.com/huazai128/ng2-admin-blog/blob/master/src/assets/img/index02.jpeg">
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+  <img src="https://github.com/huazai128/ng2-admin-blog/blob/master/src/assets/img/index06.jpeg">
+  
+  <img src="https://github.com/huazai128/ng2-admin-blog/blob/master/src/assets/img/index07.jpeg">
+  
+  <img src="https://github.com/huazai128/ng2-admin-blog/blob/master/src/assets/img/index08.jpeg">
+  
+ 
+# Update
+  
+  继续更新～～～
+  
+ 
+ 
