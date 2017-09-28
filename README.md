@@ -31,7 +31,7 @@ npm run server:prod
   
  <img src="https://github.com/huazai128/ng2-admin-blog/blob/master/src/assets/img/index03.jpeg">
   
- <img src="https://github.com/huazai128/ng2-admin-blog/blob/master/src/assets/img/index04.png">
+ <img src="https://github.com/huazai128/Ng4-H/blob/master/src/assets/img/index04.png">
  
  <img src="https://github.com/huazai128/ng2-admin-blog/blob/master/src/assets/img/index05.jpeg">
  
