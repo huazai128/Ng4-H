@@ -1,5 +1,5 @@
 
-# Angular开发后台
+# Angular开发后台(个人项目，还在开发中...)
  1、angular4
  
  2、bootstrap@4.0.0-alpha.6
@@ -14,7 +14,7 @@
  
  7、ngx-bootstrap
  
- 8、echarts
+ 8、echarts ...
 
 # 执行命令
 ```bash
