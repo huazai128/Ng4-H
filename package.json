@@ -41,6 +41,7 @@
     "@angular/platform-browser-dynamic": "^4.0.0",
     "@angular/router": "^4.0.0",
     "@types/moment": "^2.13.0",
+    "angular4-color-picker": "^1.4.2",
     "animate.css": "^3.5.2",
     "bootstrap": "^4.0.0-alpha.6",
     "codemirror": "^5.30.0",

@@ -13,7 +13,6 @@ export class PluginComponent{
   public _formatTwo = percent => `Done`;
   public _date = new Date();
 
-
   public ionOps = [
     {
       min: 0,

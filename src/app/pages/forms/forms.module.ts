@@ -8,6 +8,8 @@ import { BasicComponent } from "./basic/basic.component";
 import { FormModal } from "./basic/component/form.modal";
 import { AllFormComponent } from "./basic/component/all.form.component";
 import { PluginComponent } from "./plugin/plugin.component";
+import { ChosenComponent,ColorPickerComponent } from "./plugin/component";
+import { ColorPickerModule } from "angular4-color-picker";
 
 const routes:Routes = [
   { path:"basic",component:BasicComponent },
@@ -21,13 +23,16 @@ const routes:Routes = [
     ReactiveFormsModule,
     RouterModule.forChild(routes),
     NgZorroAntdModule,
+    ColorPickerModule,
     NgaModule
   ],
   declarations:[
     BasicComponent,
     FormModal,
     AllFormComponent,
-    PluginComponent
+    PluginComponent,
+    ChosenComponent,
+    ColorPickerComponent
   ],
   exports:[
     RouterModule

@@ -1,1 +1,33 @@
-<h2>sddsds</h2>
+<div class="chosen">
+  <div class="chosen-group">
+    <nz-select
+      style="width: 200px;"
+      nzAllowClear
+      [nzPlaceHolder]="'Select a person'"
+      [(ngModel)]="selectedOption"
+      [nzShowSearch]="true">
+      <nz-option
+        *ngFor="let option of searchOptions"
+        [nzLabel]="option.label"
+        [nzValue]="option.value"
+        [nzDisabled]="option.disabled">
+      </nz-option>
+    </nz-select>
+  </div>
+
+  <div class="chosen-group">
+    <nz-select
+      style="width: 100%"
+      [nzTags]="true"
+      [nzPlaceHolder]="'请选择人员'"
+      [(ngModel)]="selectedMultipleOption"
+      [nzNotFoundContent]="'无法找到'"
+      [nzShowSearch]="true">
+      <nz-option
+        *ngFor="let option of searchOptions"
+        [nzLabel]="option.label"
+        [nzValue]="option">
+      </nz-option>
+    </nz-select>
+  </div>
+</div>

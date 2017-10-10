@@ -1,6 +1,5 @@
 <div nz-row [nzGutter]="16">
   <div nz-col [nzMd]="12">
-
     <div nz-row [nzGutter]="16">
       <div nz-col [nzMd]="24">
         <ba-card cardTitle="进度条" selectType="ba-card-config">
@@ -17,7 +16,6 @@
           </div>
         </ba-card>
       </div>
-
       <div nz-col [nzMd]="24">
         <ba-card cardTitle="切换开关" selectType="ba-card-config">
           <ba-card-config></ba-card-config>
@@ -50,10 +48,8 @@
     </ba-card>
   </div>
 </div>
-
-
 <div nz-row [nzGutter]="16" class="date-box">
-  <div nz-col [nzMd]="12">
+  <div nz-col [nzMd]="10">
     <div nz-row>
       <div nz-col [nzMd]="24">
         <ba-card cardTitle="日期选择器" selectType="ba-card-config">
@@ -72,15 +68,20 @@
         </ba-card>
       </div>
     </div>
-
     <div nz-row>
       <div nz-col [nzMd]="24">
-        <ba-card cardTitle="日期选择器" selectType="ba-card-config">
+        <ba-card cardTitle="下拉列表" selectType="ba-card-config">
           <ba-card-config></ba-card-config>
-
+          <page-chosen></page-chosen>
         </ba-card>
       </div>
     </div>
+  </div>
 
+  <div nz-col [nzMd]="14">
+    <ba-card cardTitle="固定格式文本" selectType="ba-card-config">
+      <ba-card-config></ba-card-config>
+      <page-color-picker></page-color-picker>
+    </ba-card>
   </div>
 </div>

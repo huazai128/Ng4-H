@@ -1,0 +1,23 @@
+<div nz-row [nzGutter]="16">
+  <div nz-col [nzMd]="14">
+    <form class="form-horizontal">
+      <div class="form-group">
+        <div class="form-group">
+          <label class="font-noraml">RGBA颜色</label>
+          <div class="input-group color-picker-btn">
+            <input [(ngModel)]="color" name="color" class="form-control" />
+            <span class="input-group-addon"><i [style.background]="color" [(colorPicker)]="color"></i></span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="font-noraml">RGBA颜色</label>
+          <div class="input-group color-picker-btn">
+            <input [(ngModel)]="color2" name="color2" class="form-control" />
+            <span class="input-group-addon"><i [style.background]="color2" [(colorPicker)]="color2"></i></span>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
