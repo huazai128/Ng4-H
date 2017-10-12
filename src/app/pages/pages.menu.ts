@@ -200,25 +200,7 @@ export const PAGES_MENU = [
               menu: {
                 title: '文件上传',
               }
-            },
-            children: [
-              {
-                path: '',
-                data: {
-                  menu: {
-                    title: '百度WebUploader',
-                  }
-                }
-              },
-              {
-                path: 'avatar',
-                data: {
-                  menu: {
-                    title: '头像剪切',
-                  }
-                }
-              }
-            ]
+            }
           },
           {
             path: 'search',
