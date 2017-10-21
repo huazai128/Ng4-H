@@ -1,0 +1,33 @@
+<div nz-row [nzGutter]="16">
+  <div nz-col [nzMd]="24">
+    <ba-card cardTitle="头像裁剪" selectType="ba-card-config">
+      <ba-card-config></ba-card-config>
+      <div class="avatar-box">
+        <div class="avatar-head">
+          <h3>头像裁剪上传</h3>
+        </div>
+        <div class="avatar-body clearfix">
+          <div class="pull-left" *ngIf="showUpload">
+            <img [src]="data.image">
+            <div class="box-footer">
+              <button class="btn btn-primary btn-sm" (click)="toggleUpload()">
+                <i class="fa fa-camera"></i> 上传图片
+              </button>
+            </div>
+          </div>
+          <div class="pull-left" id="upload-wrapper">
+            <img-cropper #cropper [image]="data" [settings]="cropperSettings"></img-cropper>
+            <div class="box-footer">
+              <button class="btn btn-success" (click)="uploadFile()">
+                <i class="fa fa-upload"></i> 上传
+              </button>
+              <button class="btn btn-warning" (click)="toggleUpload()">
+                <i class="fa da-times"></i> 取消
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </ba-card>
+  </div>
+</div>

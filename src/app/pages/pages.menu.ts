@@ -203,10 +203,10 @@ export const PAGES_MENU = [
             }
           },
           {
-            path: 'search',
+            path: 'avatar',
             data: {
               menu: {
-                title: '自动补全',
+                title: '头像裁剪',
               }
             }
           },
