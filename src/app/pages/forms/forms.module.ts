@@ -15,12 +15,16 @@ import { PluginComponent } from "./plugin/plugin.component";
 import { ChosenComponent,ColorPickerComponent } from "./plugin/component";
 import { FileUploadComponent } from "./file-upload/file-upload.component";
 import { AvatarComponent } from "./avatar/avatar.component";
+import { FormAvatarComponent } from "./form_avatar/form-avatar.component";
+import { DatePickerComponent } from "./datePicker/datePicker.component";
 
 const routes:Routes = [
   { path:"basic",component:BasicComponent },
   { path:"plugin",component:PluginComponent },
   { path:"upload",component:FileUploadComponent },
-  { path:"avatar",component:AvatarComponent }
+  { path:"avatar",component:AvatarComponent },
+  { path:"from_avatar",component:FormAvatarComponent },
+  { path:"date",component:DatePickerComponent },
 ]
 
 @NgModule({
@@ -43,7 +47,9 @@ const routes:Routes = [
     ChosenComponent,
     ColorPickerComponent,
     FileUploadComponent,
-    AvatarComponent
+    AvatarComponent,
+    FormAvatarComponent,
+    DatePickerComponent
   ],
   exports:[
     RouterModule

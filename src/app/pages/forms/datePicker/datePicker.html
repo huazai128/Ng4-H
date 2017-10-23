@@ -1,0 +1,37 @@
+<div nz-row [nzGutter]="16">
+  <div nz-col [nzMd]="24">
+    <ba-card cardTitle="日期组件" selectType="ba-card-config">
+      <ba-card-config></ba-card-config>
+      <div class="date-box">
+
+        <h4>日期组件</h4>
+
+        <div nz-row [nzGutter]="16" class="box-top">
+          <div nz-col [nzMd]="12">
+            <nz-datepicker [(ngModel)]="_date"
+                           class="date-control"
+                           [nzShowTime]="true"
+                           [nzPlaceHolder]="'Select date'"
+                           [nzFormat]="'YYYY-MM-DD HH:mm:ss'"></nz-datepicker>
+          </div>
+
+          <div nz-col [nzMd]="12">
+            <nz-datepicker [(ngModel)]="_date1"
+                           class="date-control"
+                           [nzShowTime]="true"
+                           [nzPlaceHolder]="'Select date'"
+                           [nzFormat]="'YYYY-MM-DD HH:mm:ss'"
+                           [nzDisabled]="true"></nz-datepicker>
+          </div>
+        </div>
+
+        <div nz-row [nzGutter]="16" style="margin-top: 20px;">
+          <div nz-col [nzMd]="16">
+            <nz-datepicker style="width: 40%;" (ngModelChange)="_startDate=$event;_startValueChange()" [ngModel]="_startDate" [nzDisabledDate]="_disabledStartDate" [nzShowTime]="true" [nzFormat]="'YYYY-MM-DD HH:mm:ss'" [nzPlaceHolder]="'Start date'"></nz-datepicker>
+            <nz-datepicker style="width: 40%;" (ngModelChange)="_endDate=$event;_endValueChange()" [ngModel]="_endDate" [nzDisabledDate]="_disabledEndDate" [nzShowTime]="_endTime" [nzFormat]="'YYYY-MM-DD HH:mm:ss'" [nzPlaceHolder]="'End date'"></nz-datepicker>
+          </div>
+        </div>
+      </div>
+    </ba-card>
+  </div>
+</div>

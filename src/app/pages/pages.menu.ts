@@ -211,6 +211,14 @@ export const PAGES_MENU = [
             }
           },
           {
+            path: 'from_avatar',
+            data: {
+              menu: {
+                title: '头像上传编辑器',
+              }
+            }
+          },
+          {
             path: 'date',
             data: {
               menu: {
