@@ -25,7 +25,8 @@ import {
   ChildComponent,
   BaTimelineComponent,
   BaIonRangeSliderComponent,
-  BaSwitcheryComponent
+  BaSwitcheryComponent,
+  MarkdownEditorComponent
 } from "./component";
 const NGA_COMPONENT = [
   BaNavbarTopComponent,
@@ -46,7 +47,8 @@ const NGA_COMPONENT = [
   ChildComponent,
   BaTimelineComponent,
   BaIonRangeSliderComponent,
-  BaSwitcheryComponent
+  BaSwitcheryComponent,
+  MarkdownEditorComponent
 ]
 
 // 管道
