@@ -2,6 +2,7 @@ import { NgModule,ModuleWithProviders,NO_ERRORS_SCHEMA } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { FormsModule } from "@angular/forms";
 import { RouterModule } from '@angular/router';
+import { ModalModule } from "ngx-bootstrap";
 
 import { BaThemeConfigProvider } from "./theme.configProvider";
 
@@ -82,7 +83,8 @@ const NGA_DIRECTIVES = [
   imports:[
     CommonModule,
     RouterModule,
-    FormsModule
+    FormsModule,
+    ModalModule
   ],
   exports:[
     ...NGA_COMPONENT,
