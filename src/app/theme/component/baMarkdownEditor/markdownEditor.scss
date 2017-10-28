@@ -1,10 +1,10 @@
-@import "~app/theme/scss/conf/conf";
+@import "../../scss/conf/conf";
 @import "~codemirror/lib/codemirror.css";
 @import "~codemirror/theme/base16-dark.css";
 @import "~codemirror/addon/fold/foldgutter.css";
+@import "~highlight.js/styles/ocean.css";
 
 .markdown-editor {
-
   &.fullscreen {
     position: fixed;
     width: 100%;
@@ -115,7 +115,7 @@
       z-index: 99;
       color: #333;
       padding: 2em;
-      background-color: $default;
+      background-color: #e5e5e5;
       transition: left 0.1s ease;
 
       a {

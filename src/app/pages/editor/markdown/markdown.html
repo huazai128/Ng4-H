@@ -3,7 +3,21 @@
     <ba-card  cardTitle="Markdown编辑器" selectType="ba-card-config">
       <ba-card-config></ba-card-config>
 
-      <ba-markdown [(ngModel)]="content"></ba-markdown>
+      <form class="form-horizontal"
+            [formGroup]="editForm"
+            (submit)="saveEditor(editForm.value)">
+        <div class="form-group">
+          <ba-markdown
+            pathName="/pages/editor/markdown"
+            [formControl]="content"
+            class="form-control"></ba-markdown>
+        </div>
+        <div class="form-group">
+          <button type="submit"
+                  class="btn btn-success"
+                  [disabled]="!editForm.valid" >发布</button>
+        </div>
+      </form>
     </ba-card>
   </div>
 </div>

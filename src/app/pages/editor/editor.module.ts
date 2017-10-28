@@ -6,11 +6,12 @@ import { Routes,RouterModule } from "@angular/router";
 import { NgZorroAntdModule } from "ng-zorro-antd";
 
 import { MarkdownComponent } from "./markdown/markdown.component";
+import { QuillComponent } from "./quill/quill.component";
 
 const routes:Routes = [
-  { path:"markdown",component:MarkdownComponent}
+  { path:"markdown",component:MarkdownComponent},
+  { path:"quill",component:QuillComponent }
 ];
-
 
 @NgModule({
   imports:[
@@ -22,7 +23,8 @@ const routes:Routes = [
     NgaModule
   ],
   declarations:[
-    MarkdownComponent
+    MarkdownComponent,
+    QuillComponent
   ],
   providers:[
 

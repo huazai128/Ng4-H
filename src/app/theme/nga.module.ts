@@ -27,7 +27,8 @@ import {
   BaTimelineComponent,
   BaIonRangeSliderComponent,
   BaSwitcheryComponent,
-  MarkdownEditorComponent
+  MarkdownEditorComponent,
+  QuillEditor
 } from "./component";
 const NGA_COMPONENT = [
   BaNavbarTopComponent,
@@ -49,7 +50,8 @@ const NGA_COMPONENT = [
   BaTimelineComponent,
   BaIonRangeSliderComponent,
   BaSwitcheryComponent,
-  MarkdownEditorComponent
+  MarkdownEditorComponent,
+  QuillEditor
 ]
 
 // 管道
@@ -84,7 +86,7 @@ const NGA_DIRECTIVES = [
     CommonModule,
     RouterModule,
     FormsModule,
-    ModalModule
+    ModalModule.forRoot()
   ],
   exports:[
     ...NGA_COMPONENT,

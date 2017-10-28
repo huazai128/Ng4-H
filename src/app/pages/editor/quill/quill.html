@@ -1,0 +1,15 @@
+<div nz-row [nzGutter]="16">
+  <div nz-col [nzMd]="24">
+    <ba-card cardTitle="Quill编辑器" selectType="ba-card-config">
+      <ba-card-config></ba-card-config>
+
+      <form class="form-horizontal"
+            [formGroup]="editorForm"
+            (submit)="saveEditor()">
+        <div class="form-group">
+          <ba-quill></ba-quill>
+        </div>
+      </form>
+    </ba-card>
+  </div>
+</div>
