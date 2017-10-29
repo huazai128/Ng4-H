@@ -1,0 +1,11 @@
+@import "~quill/dist/quill.core.css";
+@import "~quill/dist/quill.snow.css";
+@import "~quill/dist/quill.bubble.css";
+
+.quill-editor{
+  background-color: #fff;
+  min-height: 300px;
+}
+.ql-toolbar.ql-snow{
+  background-color: #fff !important;
+}

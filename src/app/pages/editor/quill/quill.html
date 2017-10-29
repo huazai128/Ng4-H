@@ -3,13 +3,15 @@
     <ba-card cardTitle="Quill编辑器" selectType="ba-card-config">
       <ba-card-config></ba-card-config>
 
-      <form class="form-horizontal"
-            [formGroup]="editorForm"
-            (submit)="saveEditor()">
-        <div class="form-group">
-          <ba-quill></ba-quill>
-        </div>
-      </form>
+      <div class="">
+        <ba-quill [(ngModel)]="editorContent"
+                  class="quill-content"
+                  [options]="editorOptions"
+                  (blur)="onEditorBlured($event)"
+                  (focus)="onEditorFocused($event)"
+                  (ready)="onEditorCreated($event)"
+                  (change)="onContentChanged($event)"></ba-quill>
+      </div>
     </ba-card>
   </div>
 </div>
