@@ -14,7 +14,11 @@
  
  7、ngx-bootstrap
  
- 8、echarts ...
+ 8、echarts
+ 
+ 9、新增markdown编辑器和Quill编辑器
+ 
+ 
 
 # 执行命令
 ```bash

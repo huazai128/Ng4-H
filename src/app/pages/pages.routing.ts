@@ -14,6 +14,7 @@ const routes:Routes = [
       { path:"news",loadChildren:"app/pages/news/new.module#NewModule" },
       { path:"forms",loadChildren:"app/pages/forms/forms.module#FormModule" },
       { path:"editor",loadChildren:"app/pages/editor/editor.module#EditorModule" },
+      { path:"page",loadChildren:"app/pages/page/page.module#PageModule" },
     ]
   }
 ]

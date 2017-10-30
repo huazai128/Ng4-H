@@ -90,7 +90,6 @@ export class QuillEditor implements ControlValueAccessor{
 
     this.quillEditor.on("text-change",(dalta:DeltaStatic,oldDelta:DeltaStatic,source:Sources) => {
       let html = this.editorElm.nativeElement.innerHTML;
-      console.log(html);
       const text = this.quillEditor.getText();
       if(html === '<p><br></p>') html = null;
       this.onModelChange(html);
