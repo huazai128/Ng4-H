@@ -1,0 +1,57 @@
+@import "../../../theme/scss/conf/conf";
+
+.contact-cont{
+  & > .row {
+    margin-bottom: 1.25rem;
+  }
+  
+  .contact-box{
+    background-color: $default;
+    border-radius: 0.3124rem;
+    -moz-border-radius: 0.3124rem;
+    padding: 1.875rem 0;
+    overflow: hidden;
+
+
+    .col-sm-4{
+      p {
+        width: 4rem;
+        height: 4rem;
+        overflow: hidden;
+        background-color: $default-color;
+        border-radius: 50%;
+        -moz-border-radius: 50%;
+        display: -webkit-flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 0.7rem;
+        text-align: center;
+        & > img{
+          width: 4rem;
+          height: 4rem;
+          overflow: hidden;
+        }
+      }
+      .font-bold{
+        color: $text-color;
+      }
+    }
+    .col-sm-8{
+      color: $text-color;
+      h3{
+        font-size: 1.14rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+        color: $text-color !important;
+      }
+      p{
+        font-size: 0.85714rem;
+        margin-bottom: 1rem;
+      }
+      address{
+        font-size: 0.8125rem;
+      }
+    }
+  }
+}

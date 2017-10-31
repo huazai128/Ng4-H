@@ -1,0 +1,36 @@
+<div nz-row [nzGutter]="16">
+  <div nz-col [nzMd]="24">
+    <ba-card cardTitle="联系人" selectType="ba-card-config">
+      <ba-card-config ></ba-card-config>
+      <div class="contact-cont">
+        <div class="row" *ngFor="let contacts of contactDatas">
+          <div class="col-md-4" *ngFor="let contact of contacts">
+            <div class="contact-box clearfix">
+              <a>
+                <div class="col-sm-4 pull-left">
+                  <div class="text-center">
+                    <p><img alt="image" class="img-circle m-t-xs img-responsive" [src]="contact.imgUrl | baProfilePicture:'jpg'"></p>
+                    <div class="m-t-xs font-bold">CTO</div>
+                  </div>
+                </div>
+              </a>
+              <div class="col-sm-8 pull-left">
+                <a>
+                  <h3><strong>奔波儿灞</strong></h3>
+                  <p><i class="fa fa-map-marker"></i> 甘肃·兰州</p>
+                </a>
+                <address>
+                  <a>
+                    <strong>.</strong><br>
+                    E-mail:xxx@baidu.com<br>
+                    Weibo:</a><a>http://weibo.com/xxx</a><br>
+                  <abbr title="Phone">Tel:</abbr> (123) 456-7890
+                </address>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </ba-card>
+  </div>
+</div>

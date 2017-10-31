@@ -4,10 +4,10 @@ import { RouterModule,Routes } from "@angular/router";
 import { NgaModule } from "@theme/nga.module";
 import { NgZorroAntdModule } from "ng-zorro-antd";
 
-import { ContentComponent } from "./content/content.component";
+import { ContactComponent } from "./contact/contact.component";
 
 const routes:Routes = [
-  { path:"contact",component:ContentComponent },
+  { path:"contact",component:ContactComponent },
 ]
 
 @NgModule({
@@ -18,7 +18,7 @@ const routes:Routes = [
     NgaModule
   ],
   declarations:[
-    ContentComponent
+    ContactComponent
   ],
   exports:[
     RouterModule
